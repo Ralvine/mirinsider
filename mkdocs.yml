@@ -1,0 +1,87 @@
+site_name: MirInsider 镜幕
+copyright: Copyright &copy; 2021-2022 Ralvine
+site_url: https://ralvine.github.com/mirinsider/
+theme:
+  icon:
+    logo: material/salesforce
+  name: material
+  favicon: images/favicon.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - navigation.expand
+    - navigation.footer
+  language: zh
+  palette: 
+    - primary: white
+      toggle:
+        icon: material/weather-sunny
+        name: 切换夜间模式
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: 切换日间模式
+  font:
+      text: Share Tech
+      code: JetBrains Mono
+markdown_extensions:
+  - md_in_html
+  - meta
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+  - attr_list
+  - pymdownx.superfences
+  - footnotes
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://ralvine.github.io/
+      name: 访问Ralvine的博客
+    - icon: fontawesome/brands/alipay
+      link: https://ralvine.github.io/
+      name: 访问Ralvine的博客
+    - icon: fontawesome/brands/apple
+      link: https://ralvine.github.io/
+      name: 访问Ralvine的博客
+    - icon: fontawesome/brands/steam
+      link: https://ralvine.github.io/
+      name: 访问Ralvine的博客
+    - icon: fontawesome/brands/telegram
+      link: https://ralvine.github.io/
+      name: 访问Ralvine的博客
+    - icon: fontawesome/brands/twitter
+      link: https://ralvine.github.io/
+      name: 访问Ralvine的博客
+    - icon: fontawesome/brands/weibo
+      link: https://ralvine.github.io/
+      name: 访问Ralvine的博客
+    - icon: fontawesome/brands/weixin
+      link: https://ralvine.github.io/
+      name: 访问Ralvine的博客
+    - icon: fontawesome/brands/youtube
+      link: https://ralvine.github.io/
+      name: 访问Ralvine的博客
+    - icon: fontawesome/brands/zhihu
+      link: https://ralvine.github.io/
+      name: 访问Ralvine的博客
+extra_css:
+  - extra.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+nav:
+  - 📍客廊: 'index.md'
+  - 🖋️胶卷: 'memo/index.md'
+  - 📁镜观: 'library/index.md'
+  - 🗒邻域: 'notes/index.md'
+  - 📚目余: 'view/index.md'
+  # secret: 'cyr-1'
