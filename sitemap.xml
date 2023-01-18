@@ -16,6 +16,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ralvine.github.com/mirinsider/memo/shijian2023/</loc>
+         <lastmod>2023-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ralvine.github.com/mirinsider/memo/tran/</loc>
+         <lastmod>2023-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ralvine.github.com/mirinsider/notes/</loc>
          <lastmod>2023-01-18</lastmod>
          <changefreq>daily</changefreq>
