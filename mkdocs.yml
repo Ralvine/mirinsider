@@ -10,11 +10,13 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
-    - navigation.tabs.sticky
+    #- navigation.tabs.sticky
+    - navigation.indexes
     - navigation.top
-    - search.highlight
     - navigation.expand
     - navigation.footer
+    - search.highlight
+    - search.share
   language: zh
   palette: 
     - primary: white
@@ -30,16 +32,32 @@ theme:
       text: Share Tech
       code: JetBrains Mono
 markdown_extensions:
-  - md_in_html
   - meta
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.highlight:
       use_pygments: true
       linenums: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - attr_list
-  - pymdownx.superfences
+  - md_in_html
+  - admonition
   - footnotes
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: iso_datetime
+  - search
+  - tags
+  - tags:
+      enabled: !ENV [CI, false]
+      tags_file: tags.md
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -79,9 +97,92 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
-  - 📍客廊: 'index.md'
-  - 🖋️胶卷: 'memo/index.md'
-  - 📁镜观: 'library/index.md'
-  - 🗒邻域: 'notes/index.md'
-  - 📚目余: 'view/index.md'
-  # secret: 'cyr-1'
+  - "📍客廊": index.md
+  - "🖋️胶卷": 
+    - memo/index.md
+    - "旅行":
+      - memo/chuanyu.md
+      - memo/tibet.md
+    - "公益服务":
+      - memo/mathqa22.md
+      - memo/xncx.md
+      - memo/zhijiao22.md
+    - "实践活动":
+      - memo/highschool.md
+      - memo/winter21.md
+      - memo/winter22.md
+    - "学术项目":
+      - memo/tran.md
+      - memo/apmcm.md
+      - memo/mathshanshu.md
+      - memo/mathshenzh.md
+      - memo/mcm22.md
+      - memo/modelzhcn.md
+      - memo/modelzju.md
+      - memo/srtp.md
+    - "组织工作":
+      - memo/test.md
+      - "求是潮工作团队":
+        - memo/test.md
+        - memo/test.md
+      - "团委学生文体中心":
+        - memo/test.md
+        - memo/test.md
+      - "信计党支部":
+        - memo/test.md
+        - memo/test.md
+      - "竺可桢学院ITP":
+        - memo/test.md
+        - memo/test.md
+      - "ZJUMSC":
+        - memo/test.md
+  - "📁镜观": 
+    - library/index.md
+    - library/fsz-1.md
+    - library/fsz-2.md
+    - library/jzm-1.md
+    - library/mks-1.md
+    - library/mks-2.md
+    - library/mqz-1.md
+    - library/mqz-2.md
+    - library/mqz-3.md
+    - library/mzd-1.md
+    - library/news-1.md
+    - library/slz-1.md
+    - library/slz-2.md
+    - library/united-1.md
+    - library/united-2.md
+    - library/wqs-1.md
+    - library/wqs-2.md
+    - library/wqs-3.md
+    - library/wjb-1.md
+    - library/xjp-1.md
+    - library/xjp-2.md
+    - library/xjp-3.md
+    - library/xjp-4.md
+    - library/xjp-5.md
+    - library/xjp-6.md
+    - library/ygz-1.md
+    - library/ygz-2.md
+    - library/zjw-1.md
+    - library/zjw-2.md
+    - library/zy23-1.md
+  - "🗒邻域": 
+    - notes/index.md
+    - "浙江大学本科生课程":
+      - "2022-2023秋冬":
+        - notes/data.md
+        - notes/quan.md
+      - "2021-2022春夏":
+        - notes/model.md
+        - notes/pde.md
+      - "2021-2022秋冬":
+        - notes/ds.md
+      - "2020-2021春夏":
+        - notes/wxqy.md
+    - "计算机科学与技术":
+      - "机器学习":
+        - notes/quan.md
+  - "📚目余": 
+    - view/index.md
+    - view/liucx.md

@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;700&display=swap');
 
+
 .md-ellipsis, h1, .headerlink{
     font-size: larger;
     font-family: 'Ma Shan Zheng', 'ZCOOL XiaoWei', serif;
@@ -73,8 +74,8 @@ li {
     --md-default-bg-color--light: hsla(0,0%,100%,.7);
     --md-default-bg-color--lighter: hsla(0,0%,100%,.3);
     --md-default-bg-color--lightest: hsla(0,0%,100%,.12);
-    --md-primary-fg-color: #967E76;
-    --md-primary-fg-color--light: #ab9188;
+    --md-primary-fg-color: #672818;
+    --md-primary-fg-color--light: #C0815F;
     --md-primary-fg-color--dark: #806b65;
     --md-primary-bg-color: #FDF6EC;
     --md-primary-bg-color--light: hsla(0,0%,100%,.7);
