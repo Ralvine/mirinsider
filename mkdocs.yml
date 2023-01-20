@@ -32,6 +32,9 @@ theme:
       text: Share Tech
       code: JetBrains Mono
 markdown_extensions:
+  - toc:
+      permalink: true
+      permalink_title: 跳转到该部分
   - meta
   - pymdownx.tabbed:
       alternate_style: true 
@@ -97,7 +100,10 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
-  - "📍客廊": index.md
+  - "📍客廊":
+    - index.md
+    - "👨简介": brief.md
+    - "🏷️标签": tags.md
   - "🖋️胶卷": 
     - memo/index.md
     - "旅行":
@@ -183,6 +189,16 @@ nav:
     - "计算机科学与技术":
       - "机器学习":
         - notes/quan.md
+      - notes/fcpx.md
+      - notes/html-css.md
+      - notes/note0.md
+      - notes/docker.md
+      - notes/webs.md
   - "📚目余": 
     - view/index.md
-    - view/liucx.md
+    - "书籍":
+      - view/liucx.md
+    - "音乐":
+      - view/lyric.md
+    - "视频":
+      - view/surface.md

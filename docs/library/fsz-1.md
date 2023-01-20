@@ -1,8 +1,7 @@
 ---
 tags:
-  - 政治
-  - JavaScript
-  - CSS
+  - 意识形态
+  - 思潮
 ---
 
 
