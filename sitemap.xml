@@ -261,12 +261,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/docker/</loc>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ralvine.github.com/mirinsider/notes/ds/</loc>
          <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/fcpx/</loc>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/html-css/</loc>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ralvine.github.com/mirinsider/notes/model/</loc>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/note0/</loc>
          <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -277,6 +297,11 @@
     </url>
     <url>
          <loc>https://ralvine.github.com/mirinsider/notes/quan/</loc>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/webs/</loc>
          <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -292,6 +317,11 @@
     </url>
     <url>
          <loc>https://ralvine.github.com/mirinsider/view/liucx/</loc>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ralvine.github.com/mirinsider/view/surface/</loc>
          <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
