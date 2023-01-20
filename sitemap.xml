@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ralvine.github.com/mirinsider/tags/</loc>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ralvine.github.com/mirinsider/library/</loc>
          <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
@@ -287,6 +292,11 @@
     </url>
     <url>
          <loc>https://ralvine.github.com/mirinsider/view/test/</loc>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ralvine.github.com/mirinsider/tags/</loc>
          <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
