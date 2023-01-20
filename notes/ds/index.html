@@ -2845,10 +2845,50 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_2" tabindex="0" aria-expanded="false">
+          书籍
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="书籍" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          书籍
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../view/liucx/" class="md-nav__link">
         刘慈欣短篇科幻小说合集
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3521,12 +3561,26 @@
                   
   
 
+  <nav class="md-tags" >
+    
+      
+      
+        <a href="../../tags/#" class="md-tag">计算数学</a>
+      
+    
+      
+      
+        <a href="../../tags/#" class="md-tag">计算机科学</a>
+      
+    
+  </nav>
 
 
 
 
-<h1 id="_1">数据结构与算法</h1>
-<h2 id="_2">课程概况</h2>
+
+<h1 id="_1">数据结构与算法<a class="headerlink" href="#_1" title="跳转到该部分">&para;</a></h1>
+<h2 id="_2">课程概况<a class="headerlink" href="#_2" title="跳转到该部分">&para;</a></h2>
 <div class="admonition note">
 <ul>
 <li><strong>类型</strong> 🎓 数学科学学院（专业必修课程）</li>
@@ -3538,7 +3592,7 @@
 <li><strong>教材</strong> 📙 </li>
 </ul>
 </div>
-<h2 id="_3">大纲</h2>
+<h2 id="_3">大纲<a class="headerlink" href="#_3" title="跳转到该部分">&para;</a></h2>
 <div class="admonition note">
 <ul>
 <li><strong>CH1.</strong> *</li>
@@ -3553,9 +3607,9 @@
 <li><strong>Extra.</strong> 主定理</li>
 </ul>
 </div>
-<h2 id="_4">学习笔记</h2>
-<h3 id="_5">类模板及语法基础</h3>
-<h4 id="_6">动态内存与释放</h4>
+<h2 id="_4">学习笔记<a class="headerlink" href="#_4" title="跳转到该部分">&para;</a></h2>
+<h3 id="_5">类模板及语法基础<a class="headerlink" href="#_5" title="跳转到该部分">&para;</a></h3>
+<h4 id="_6">动态内存与释放<a class="headerlink" href="#_6" title="跳转到该部分">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"> </span><span class="k">delete</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
 <span class="n">Birds</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="kt">char</span><span class="p">[</span><span class="mi">256</span><span class="p">]}</span>
@@ -3563,7 +3617,7 @@
 <p>利用指针实现动态内存分配。同值对象指向相同address</p>
 <p>Shell命令查看内存泄漏状况<code>valgrind filename</code></p>
 <p>释放内存：及时delete变量。由于为指针，要防止指向新地址时原内存未被释放。</p>
-<h4 id="template">template</h4>
+<h4 id="template">template<a class="headerlink" href="#template" title="跳转到该部分">&para;</a></h4>
 <p>编译时自动填充typename
 在类外撰写类成员函数时需要添加
 可指定T的具体类型</p>
@@ -3571,20 +3625,20 @@
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
 <span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">FunctionName</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">_obj</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 </code></pre></div></td></tr></table></div>
-<h4 id="_7">关键字修饰符</h4>
-<h5 id="const">const</h5>
+<h4 id="_7">关键字修饰符<a class="headerlink" href="#_7" title="跳转到该部分">&para;</a></h4>
+<h5 id="const">const<a class="headerlink" href="#const" title="跳转到该部分">&para;</a></h5>
 <p>对成员函数：修饰非静态数据，只读化。应尽可能将该成员函数声明为const 成员函数，除非成员函数需要修改数据成员。const可访问非常量数据，反之不可。指针数据可以被const 函数修改。
 <code>Class:: func() const {}</code></p>
 <p>对形参：指针传递，禁止修改指针指向地址内存数据；值传递不需要const保护。</p>
 <p><code>void copyMemory(const T* _s,T* _d,int _n);</code></p>
-<h5 id="static">Static</h5>
+<h5 id="static">Static<a class="headerlink" href="#static" title="跳转到该部分">&para;</a></h5>
 <p>静态变量，延长生命周期又相较全局变量保留了一定的访问范围。需要一个数据对象为整个类而非某个对象服务,同时又力求不破坏类的封装性,即要求此成员隐藏在类的内部时使用。</p>
-<h5 id="this">*this</h5>
+<h5 id="this">*this<a class="headerlink" href="#this" title="跳转到该部分">&para;</a></h5>
 <p>指向obj自身的指针</p>
-<h5 id="explicit">Explicit 显式转换</h5>
+<h5 id="explicit">Explicit 显式转换<a class="headerlink" href="#explicit" title="跳转到该部分">&para;</a></h5>
 <p>explicit 对单参数构造函数限制隐式转换
 防止编译器进行类型等方式的强制转换。</p>
-<h4 id="_8">宏定义</h4>
+<h4 id="_8">宏定义<a class="headerlink" href="#_8" title="跳转到该部分">&para;</a></h4>
 <p>用于简化重复语句<code>#define TEMP template&lt;typename T&gt;</code></p>
 <p>编译处理</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3595,12 +3649,12 @@
 <span class="cp">#else</span>
 <span class="cp">#endif</span>
 </code></pre></div></td></tr></table></div>
-<h4 id="_9">传递 引用</h4>
-<h5 id="_10">形参的值传递 指针传递 引用传递</h5>
+<h4 id="_9">传递 引用<a class="headerlink" href="#_9" title="跳转到该部分">&para;</a></h4>
+<h5 id="_10">形参的值传递 指针传递 引用传递<a class="headerlink" href="#_10" title="跳转到该部分">&para;</a></h5>
 <p>默认为值传递，开辟新函数，储存实参数据；指针实质存在一层中介地址，引用传递直接对传入对象进行修改；*&amp;obj适用于struct对象，对其属性变量进行修改</p>
 <p>（1）T<em> a： 传递实参指针地址，及最终指向数据地址，但可以利用</em>a修改地址内存数据
 （2）T&amp; a：左值引用，实参的别名</p>
-<h5 id="_11">左值 右值引用</h5>
+<h5 id="_11">左值 右值引用<a class="headerlink" href="#_11" title="跳转到该部分">&para;</a></h5>
 <p>右值引用&amp;&amp;：防止传递给形参T&amp; a的是常量（此时函数无法修改a）</p>
 <p><strong>看能不能对表达式取地址，如果能，则为左值，否则为右值</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3612,15 +3666,15 @@
 <span class="kt">int</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
 </code></pre></div></td></tr></table></div>
 <p><strong>约定</strong> rhs：引用；lhs：赋值</p>
-<h5 id="stdmove">std::move</h5>
+<h5 id="stdmove">std::move<a class="headerlink" href="#stdmove" title="跳转到该部分">&para;</a></h5>
 <p>强制将左值转换为右值引用，如push_back避免开辟新内存</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">AvlNode</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Comparable</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ele</span><span class="p">,</span><span class="w"> </span><span class="n">AvlNode</span><span class="w"> </span><span class="o">*</span><span class="n">lt</span><span class="p">,</span><span class="w"> </span><span class="n">AvlNode</span><span class="w"> </span><span class="o">*</span><span class="n">rt</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">element</span><span class="p">{</span><span class="n">ele</span><span class="p">},</span><span class="w"> </span><span class="n">left</span><span class="p">{</span><span class="n">lt</span><span class="p">},</span><span class="w"> </span><span class="n">right</span><span class="p">{</span><span class="n">rt</span><span class="p">},</span><span class="w"> </span><span class="n">height</span><span class="p">{</span><span class="n">h</span><span class="p">}</span><span class="w"> </span><span class="p">{}</span>
 <span class="n">AvlNode</span><span class="p">(</span><span class="n">Comparable</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">ele</span><span class="p">,</span><span class="w"> </span><span class="n">AvlNode</span><span class="w"> </span><span class="o">*</span><span class="n">lt</span><span class="p">,</span><span class="w"> </span><span class="n">AvlNode</span><span class="w"> </span><span class="o">*</span><span class="n">rt</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">element</span><span class="p">{</span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">ele</span><span class="p">)},</span><span class="w"> </span><span class="n">left</span><span class="p">{</span><span class="n">lt</span><span class="p">},</span><span class="w"> </span><span class="n">right</span><span class="p">{</span><span class="n">rt</span><span class="p">},</span><span class="w"> </span><span class="n">height</span><span class="p">{</span><span class="n">h</span><span class="p">}</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span><span class="c1">//参数无地址，临时ele=参数</span>
 </code></pre></div></td></tr></table></div>
-<h4 id="class-struct">Class &amp; Struct 封装</h4>
+<h4 id="class-struct">Class &amp; Struct 封装<a class="headerlink" href="#class-struct" title="跳转到该部分">&para;</a></h4>
 <p>外部只提供相应功能的接口，不允许直接对底层对象进行修改。</p>
-<h5 id="_12">复制构造函数</h5>
+<h5 id="_12">复制构造函数<a class="headerlink" href="#_12" title="跳转到该部分">&para;</a></h5>
 <p>将b中成员属性复制到c： <code>Birds c(b);</code>
 类中处理：定义拷贝函数；否则：缺省。
 需要开辟新的动态内存</p>
@@ -3632,18 +3686,18 @@
 <span class="n">for循环迭代载入name</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">_obj</span><span class="p">.</span><span class="n">name</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<h5 id="_13">函数化</h5>
+<h5 id="_13">函数化<a class="headerlink" href="#_13" title="跳转到该部分">&para;</a></h5>
 <p>如复制构造函数中的copyMemory，便于多核并行运算。</p>
-<h5 id="struct">struct 定义传入参数</h5>
+<h5 id="struct">struct 定义传入参数<a class="headerlink" href="#struct" title="跳转到该部分">&para;</a></h5>
 <p>使得struct能够直接在定义时传入相应参数</p>
 <p><code>BinaryNode(const Comparable&amp; theElement, BinaryNode *lt, BinaryNode *rt): element(theElement),left(lt),right(rt) {}</code></p>
-<h5 id="operator">Operator 重载运算符</h5>
+<h5 id="operator">Operator 重载运算符<a class="headerlink" href="#operator" title="跳转到该部分">&para;</a></h5>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>const Array&amp; operator=(const Array&amp; _obj)
 </code></pre></div></td></tr></table></div>
-<h5 id="_14">注释</h5>
+<h5 id="_14">注释<a class="headerlink" href="#_14" title="跳转到该部分">&para;</a></h5>
 <p>doxymacs/doxygen格式的注释：
 可以通过命令提取所有相应注释以html方式直观显示。</p>
-<h4 id="standard-template-library">Standard Template Library</h4>
+<h4 id="standard-template-library">Standard Template Library<a class="headerlink" href="#standard-template-library" title="跳转到该部分">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// get random number.</span>
@@ -3662,18 +3716,18 @@
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ctime&gt;</span>
 <span class="kt">clock_t</span><span class="w"> </span><span class="n">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clock</span><span class="p">();</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="_15">复杂度</h3>
-<h4 id="big-o">big O</h4>
+<h3 id="_15">复杂度<a class="headerlink" href="#_15" title="跳转到该部分">&para;</a></h3>
+<h4 id="big-o">big O<a class="headerlink" href="#big-o" title="跳转到该部分">&para;</a></h4>
 <p><span class="arithmatex">\(1000N=O(N^2); (logN)^k=O(N);\\\)</span>
 <span class="arithmatex">\(1 &lt; logN &lt; N &lt; NlogN &lt; N^2\)</span></p>
-<h4 id="_16">时间复杂度</h4>
+<h4 id="_16">时间复杂度<a class="headerlink" href="#_16" title="跳转到该部分">&para;</a></h4>
 <blockquote>
 <p>for循环｜内语句*迭代次数；嵌套循环
 顺序语句｜求和，取Max；判定语句
 NlogN|最大子序列问题 一次N遍历&amp;一次二分查找
 logN｜二分搜索，欧几里得</p>
 </blockquote>
-<h4 id="_17">主定理 ★</h4>
+<h4 id="_17">主定理 ★<a class="headerlink" href="#_17" title="跳转到该部分">&para;</a></h4>
 <p><img alt="image-20220102105905885" src="/Users/ralvine/Library/Application Support/typora-user-images/image-20220102105905885.png" /></p>
 <p><strong>归纳法证明：</strong> （例）</p>
 <p><img alt="image-20220104172830911" src="/Users/ralvine/Library/Application Support/typora-user-images/image-20220104172830911.png" /></p>
@@ -3688,13 +3742,13 @@ T(1) = O(1)\
 a=1,b=2,k=0\代入得O(logN);
 $$
 另可直接证，由于为1/2,1/4...1/n,尾项2^k项为n，故共logn项，T(n)=logn*o(1)=logn</p>
-<h3 id="vector-list-stack-queues">Vector &amp; List &amp; Stack &amp; Queues</h3>
-<h4 id="iterator">iterator</h4>
+<h3 id="vector-list-stack-queues">Vector &amp; List &amp; Stack &amp; Queues<a class="headerlink" href="#vector-list-stack-queues" title="跳转到该部分">&para;</a></h3>
+<h4 id="iterator">iterator<a class="headerlink" href="#iterator" title="跳转到该部分">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">iterator</span><span class="w"> </span><span class="n">a</span><span class="o">=</span><span class="n">A</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
 <span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
-<h4 id="vector-list">Vector &amp; List</h4>
+<h4 id="vector-list">Vector &amp; List<a class="headerlink" href="#vector-list" title="跳转到该部分">&para;</a></h4>
 <p>Array|经典数组
 Vector|批量分配内存的数组，空间不够时再申请新的内存；模板化<T>；允许拷贝赋值
 List|链表 Single/Double-Linked-List <strong>双链表</strong> 表头、尾、哨兵结点</p>
@@ -3766,19 +3820,19 @@ List|链表 Single/Double-Linked-List <strong>双链表</strong> 表头、尾、
 </tr>
 </tbody>
 </table>
-<h4 id="stack-queue">Stack &amp; Queue</h4>
+<h4 id="stack-queue">Stack &amp; Queue<a class="headerlink" href="#stack-queue" title="跳转到该部分">&para;</a></h4>
 <p><code>pop() push() size() swap() empty();</code>Stack:LIFO <code>top();</code> Queue:FIFO <code>front() back();</code></p>
-<h5 id="stack">Stack 计算器</h5>
+<h5 id="stack">Stack 计算器<a class="headerlink" href="#stack" title="跳转到该部分">&para;</a></h5>
 <p>前缀/后缀。<strong>中缀转后缀：</strong><code>A+B*(C-D)-E/F</code>转为<code>ABCD−∗+EF/−</code></p>
 <p>优先级设置 ‘*’ = ‘/’ &gt; ‘+’ = ‘-’ &gt;
   style1:‘(’优先级最高，如直接读入；推入操作符时不弹
   style2:‘(’优先级最低，强制直接读入
 数字直接放到[输出列]，右括号直接弹到左括号止；操作符：栈弹出直到遇到比自己优先级低的操作符再入栈。计算：顺序读取，数字入栈，符号弹出两数字运算，结果入栈</p>
-<h3 id="trees">Trees</h3>
+<h3 id="trees">Trees<a class="headerlink" href="#trees" title="跳转到该部分">&para;</a></h3>
 <p>Binary Tree 二叉树平均深度O(√N)，表达式树应用；</p>
-<h4 id="binary-search-tree">Binary Search Tree</h4>
+<h4 id="binary-search-tree">Binary Search Tree<a class="headerlink" href="#binary-search-tree" title="跳转到该部分">&para;</a></h4>
 <p>左小右大；平均深度O(logN)最坏深度O(N-1)</p>
-<h5 id="_18"><strong>构建</strong></h5>
+<h5 id="_18"><strong>构建</strong><a class="headerlink" href="#_18" title="跳转到该部分">&para;</a></h5>
 <p>contains｜findMin(Max)｜insert｜～:makeEmpty递归</p>
 <p>copy| clone，递归return new node; 重载运算符：this!=&amp;rhs则makeEmpty再clone rhs.root，最终return *this</p>
 <p>remove|(*&amp;t)t为结点地址；空,return;t&lt;&gt;x判断;t=x.</p>
@@ -3808,15 +3862,15 @@ List|链表 Single/Double-Linked-List <strong>双链表</strong> 表头、尾、
 <span class="mf">2.</span><span class="k">else</span><span class="w"> </span><span class="n">compare</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="o">-&gt;</span><span class="n">ele</span><span class="p">,</span><span class="n">递归</span>
 <span class="mf">3.</span><span class="n">balance</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">update</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">height</span><span class="p">(</span><span class="n">max</span><span class="p">(</span><span class="n">subtree</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">).</span>
 </code></pre></div></td></tr></table></div>
-<h5 id="struct_1">关于 struct 构造</h5>
+<h5 id="struct_1">关于 struct 构造<a class="headerlink" href="#struct_1" title="跳转到该部分">&para;</a></h5>
 <p>BinaryNode置于private；针对struct的操作也位于private部分</p>
 <p>外部操作→public函数→private函数</p>
-<h5 id="function">关于 function 参数</h5>
+<h5 id="function">关于 function 参数<a class="headerlink" href="#function" title="跳转到该部分">&para;</a></h5>
 <p>对Struct BinaryNode，由于其element为变量，left/right为指针，fuction引用时应采用(BinaryNode * &amp; t)，引用Node地址</p>
-<h5 id="_19">时间分析</h5>
+<h5 id="_19">时间分析<a class="headerlink" href="#_19" title="跳转到该部分">&para;</a></h5>
 <p>内部路径长｜所有结点的深度和；递推关系、秩，D(N)=D(i)+D(N-i-1)+N-1 =&gt; O(NlogN),average</p>
 <p>任意结点预期深度logN；交替insert/remove O(N^2)，期望深度O(√N)</p>
-<h4 id="balance-tree">Balance Tree</h4>
+<h4 id="balance-tree">Balance Tree<a class="headerlink" href="#balance-tree" title="跳转到该部分">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -3841,7 +3895,7 @@ List|链表 Single/Double-Linked-List <strong>双链表</strong> 表头、尾、
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="mi">-1</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">t</span><span class="o">-&gt;</span><span class="n">height</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<h5 id="avl-trees">AVL Trees</h5>
+<h5 id="avl-trees">AVL Trees<a class="headerlink" href="#avl-trees" title="跳转到该部分">&para;</a></h5>
 <p>每个结点的左子树和右子树高度最多差1（空树为-1）</p>
 <p><strong>Rotation的具体实现</strong></p>
 <table>
@@ -3949,9 +4003,9 @@ List|链表 Single/Double-Linked-List <strong>双链表</strong> 表头、尾、
 <span class="w">  </span><span class="n">t</span><span class="o">-&gt;</span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="w"> </span><span class="n">height</span><span class="p">(</span><span class="w"> </span><span class="n">t</span><span class="o">-&gt;</span><span class="n">left</span><span class="w"> </span><span class="p">),</span><span class="w"> </span><span class="n">height</span><span class="p">(</span><span class="w"> </span><span class="n">t</span><span class="o">-&gt;</span><span class="n">right</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<h5 id="splay-trees">Splay Trees*</h5>
+<h5 id="splay-trees">Splay Trees*<a class="headerlink" href="#splay-trees" title="跳转到该部分">&para;</a></h5>
 <p>保证从空树开始任意连续M次操作最多花费O(MlogN)的时间</p>
-<h4 id="traversals">Traversals</h4>
+<h4 id="traversals">Traversals<a class="headerlink" href="#traversals" title="跳转到该部分">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -3976,8 +4030,8 @@ List|链表 Single/Double-Linked-List <strong>双链表</strong> 表头、尾、
 <span class="c1">// 层序</span>
 <span class="k">using</span><span class="w"> </span><span class="o">&lt;</span><span class="n">queue</span><span class="o">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<h4 id="b-trees">B Trees*</h4>
-<h4 id="sets-maps">Sets &amp; Maps</h4>
+<h4 id="b-trees">B Trees*<a class="headerlink" href="#b-trees" title="跳转到该部分">&para;</a></h4>
+<h4 id="sets-maps">Sets &amp; Maps<a class="headerlink" href="#sets-maps" title="跳转到该部分">&para;</a></h4>
 <p>Sets｜排序、去重</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -3990,23 +4044,23 @@ List|链表 Single/Double-Linked-List <strong>双链表</strong> 表头、尾、
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
 <span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="c1">// key:b-&gt;first; value:b-&gt;second....</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="hashing">Hashing</h3>
+<h3 id="hashing">Hashing<a class="headerlink" href="#hashing" title="跳转到该部分">&para;</a></h3>
 <p>散列表；[insert/search/delete]average:O(1)；Key -&gt; Table；素数 TableSize；collision</p>
-<h4 id="analysis">Analysis</h4>
+<h4 id="analysis">Analysis<a class="headerlink" href="#analysis" title="跳转到该部分">&para;</a></h4>
 <p><strong>负数补偿？</strong>value&lt;0，then+tableSize</p>
 <p><strong>均匀分配键：</strong>单元数目有限，键数实际上无穷；习惯：0～tableSize-1</p>
 <p>装填因子；分离链接法（缺点：内存分配耗时）；除了链表，也可用二叉树/新散列表</p>
-<h4 id="_20">开放寻址法</h4>
+<h4 id="_20">开放寻址法<a class="headerlink" href="#_20" title="跳转到该部分">&para;</a></h4>
 <p>冲突解决函数，𝝀&lt;0.5聚集效应,f(i)为冲突点与探查点的距离</p>
 <p>线性探测:f(i)=i；一次聚集-占据单元形成区块</p>
 <p>平方探测:f(i)=i^2<em>保证表的大小是素数，否则表被填满一半就找不到空单元了</em>；二次聚集</p>
 <p>双散列:f(i)=i*hash(x),结果不可以为0；example，hash(x)=R-(xmodR)</p>
-<h4 id="_21">再散列</h4>
+<h4 id="_21">再散列<a class="headerlink" href="#_21" title="跳转到该部分">&para;</a></h4>
 <p>O(N);一半/插满的策略;</p>
 <p>途中策略：某一装填因子</p>
-<h4 id="_22">可扩散列*</h4>
-<h3 id="priority-queues-heaps">Priority Queues &amp; Heaps</h3>
-<h4 id="binary-heap">Binary Heap</h4>
+<h4 id="_22">可扩散列*<a class="headerlink" href="#_22" title="跳转到该部分">&para;</a></h4>
+<h3 id="priority-queues-heaps">Priority Queues &amp; Heaps<a class="headerlink" href="#priority-queues-heaps" title="跳转到该部分">&para;</a></h3>
+<h4 id="binary-heap">Binary Heap<a class="headerlink" href="#binary-heap" title="跳转到该部分">&para;</a></h4>
 <p>完全二叉树；最小堆、最大堆；数组存储i,2i,2i+1；查找O(N)；堆序性质</p>
 <p><strong>为何选用Heap？</strong>Min/Max:O(1)</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -4033,50 +4087,50 @@ List|链表 Single/Double-Linked-List <strong>双链表</strong> 表头、尾、
 <span class="w">  </span><span class="n">array</span><span class="p">[</span><span class="w"> </span><span class="n">hole</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="w"> </span><span class="n">array</span><span class="p">[</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">);</span>
 <span class="p">}</span><span class="w"> </span>
 </code></pre></div></td></tr></table></div>
-<h4 id="applications-of-priority-queues">Applications of Priority Queues</h4>
-<h3 id="sorting">Sorting</h3>
-<h4 id="insertion-sort">Insertion Sort*</h4>
-<h4 id="quick-sort">Quick Sort</h4>
-<h5 id="pivot">Pivot策略</h5>
+<h4 id="applications-of-priority-queues">Applications of Priority Queues<a class="headerlink" href="#applications-of-priority-queues" title="跳转到该部分">&para;</a></h4>
+<h3 id="sorting">Sorting<a class="headerlink" href="#sorting" title="跳转到该部分">&para;</a></h3>
+<h4 id="insertion-sort">Insertion Sort*<a class="headerlink" href="#insertion-sort" title="跳转到该部分">&para;</a></h4>
+<h4 id="quick-sort">Quick Sort<a class="headerlink" href="#quick-sort" title="跳转到该部分">&para;</a></h4>
+<h5 id="pivot">Pivot策略<a class="headerlink" href="#pivot" title="跳转到该部分">&para;</a></h5>
 <p><strong>最好/坏可能性</strong></p>
 <p>随机选择待排序序列中的一个数字作为划分字问题的标准，划分是否平均影响算法复杂度
 每次问题规模减半，a=2，b=2，d=1
 复杂度为n^2 log(n)
 最差情况下，复杂度为O(n^2)</p>
-<h5 id="a-linear-expected-time-algorithm-for-selection">A Linear-Expected-Time Algorithm for Selection</h5>
-<h4 id="linear-time-sorts-bucket-sort-and-radix-sort">Linear-Time Sorts: Bucket Sort and Radix Sort 复杂度分析</h4>
-<h4 id="_23">计（基）数排序——非比较算法</h4>
+<h5 id="a-linear-expected-time-algorithm-for-selection">A Linear-Expected-Time Algorithm for Selection<a class="headerlink" href="#a-linear-expected-time-algorithm-for-selection" title="跳转到该部分">&para;</a></h5>
+<h4 id="linear-time-sorts-bucket-sort-and-radix-sort">Linear-Time Sorts: Bucket Sort and Radix Sort 复杂度分析<a class="headerlink" href="#linear-time-sorts-bucket-sort-and-radix-sort" title="跳转到该部分">&para;</a></h4>
+<h4 id="_23">计（基）数排序——非比较算法<a class="headerlink" href="#_23" title="跳转到该部分">&para;</a></h4>
 <p>对于待排序的整数序列，从最低位到最高位每次按照相应的位排序一次
 每次递归问题规模变为原来的1/10，但需要求解10个子问题，额外运算为O(n)的，a=10，b=10，d=1
 复杂度为n^1 log(n) = nlog(n)，近似为O(kN)，k为整数的位数</p>
-<h4 id="_24">归并排序/堆排序</h4>
+<h4 id="_24">归并排序/堆排序<a class="headerlink" href="#_24" title="跳转到该部分">&para;</a></h4>
 <p><em>归并排序</em> ｜ 数据列均分为两部分，分别排序，之后以O(n)的复杂度进行合并，空间复杂度O(n)
 每次问题规模减半，a=2，b=2，d=1
 复杂度为nlog(n)</p>
-<h3 id="_25">图论算法</h3>
+<h3 id="_25">图论算法<a class="headerlink" href="#_25" title="跳转到该部分">&para;</a></h3>
 <p>G[graph] -&gt; V[vertex],E[edge(arc)],path；digraph 有向；Weight&amp;cost 权/值；Adjacent 邻接；cycle 回路：满足w1=wN length&gt;=1；loop 环：回到自身，length=0；Simple path 简单路径；强/弱连通、基础图/完全图</p>
-<h4 id="_26">表示</h4>
+<h4 id="_26">表示<a class="headerlink" href="#_26" title="跳转到该部分">&para;</a></h4>
 <p>Adjacent Matrix：dense <code>A[u][v]</code></p>
 <p>Adjacent List：sparse O(|E|+|V|) </p>
-<h4 id="_27">拓扑排序</h4>
+<h4 id="_27">拓扑排序<a class="headerlink" href="#_27" title="跳转到该部分">&para;</a></h4>
 <p>find indegree=0 v1 -&gt; delete v1, neighbors indegree-1 -&gt;find indegree=0 v2...</p>
 <p><img alt="image-20211231162550699" src="/Users/ralvine/Library/Application Support/typora-user-images/image-20211231162550699.png" /></p>
 <p>O(V^2) using <Queue></p>
-<h4 id="dijkstras">Dijkstras</h4>
-<h4 id="_28">最坏可能</h4>
-<h4 id="_29">可对负边权使用的算法</h4>
-<h4 id="_30">最小生成树</h4>
+<h4 id="dijkstras">Dijkstras<a class="headerlink" href="#dijkstras" title="跳转到该部分">&para;</a></h4>
+<h4 id="_28">最坏可能<a class="headerlink" href="#_28" title="跳转到该部分">&para;</a></h4>
+<h4 id="_29">可对负边权使用的算法<a class="headerlink" href="#_29" title="跳转到该部分">&para;</a></h4>
+<h4 id="_30">最小生成树<a class="headerlink" href="#_30" title="跳转到该部分">&para;</a></h4>
 <p>如何扩张（Ch10）</p>
-<h4 id="_31">深度优先 广度优先</h4>
-<h3 id="_32">算法设计补充</h3>
-<h4 id="_33">贪心算法</h4>
+<h4 id="_31">深度优先 广度优先<a class="headerlink" href="#_31" title="跳转到该部分">&para;</a></h4>
+<h3 id="_32">算法设计补充<a class="headerlink" href="#_32" title="跳转到该部分">&para;</a></h3>
+<h4 id="_33">贪心算法<a class="headerlink" href="#_33" title="跳转到该部分">&para;</a></h4>
 <p>ch10.1 分析复杂度</p>
-<h4 id="divide-and-conquer">分治算法 Divide-and-Conquer</h4>
+<h4 id="divide-and-conquer">分治算法 Divide-and-Conquer<a class="headerlink" href="#divide-and-conquer" title="跳转到该部分">&para;</a></h4>
 <p>分而治之，递归</p>
-<h4 id="dynamic-programming">Dynamic Programming</h4>
+<h4 id="dynamic-programming">Dynamic Programming<a class="headerlink" href="#dynamic-programming" title="跳转到该部分">&para;</a></h4>
 <p>ch10.3 与d-c的比较（自底向上&amp;自顶向下）</p>
-<h4 id="_34">回溯法</h4>
-<h2 id="_35">课程作业</h2>
+<h4 id="_34">回溯法<a class="headerlink" href="#_34" title="跳转到该部分">&para;</a></h4>
+<h2 id="_35">课程作业<a class="headerlink" href="#_35" title="跳转到该部分">&para;</a></h2>
 
   <hr>
 <div class="md-source-file">
