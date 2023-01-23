@@ -144,60 +144,115 @@ nav:
         - memo/test.md
   - "📁镜观": 
     - library/index.md
-    - library/fsz-1.md
-    - library/fsz-2.md
-    - library/jzm-1.md
-    - library/mks-1.md
-    - library/mks-2.md
-    - library/mqz-1.md
-    - library/mqz-2.md
-    - library/mqz-3.md
-    - library/mzd-1.md
-    - library/news-1.md
-    - library/slz-1.md
-    - library/slz-2.md
-    - library/united-1.md
-    - library/united-2.md
-    - library/wqs-1.md
-    - library/wqs-2.md
-    - library/wqs-3.md
-    - library/wjb-1.md
-    - library/xjp-1.md
-    - library/xjp-2.md
-    - library/xjp-3.md
-    - library/xjp-4.md
-    - library/xjp-5.md
-    - library/xjp-6.md
-    - library/ygz-1.md
-    - library/ygz-2.md
-    - library/zjw-1.md
-    - library/zjw-2.md
-    - library/zy23-1.md
+    - "评论":
+      - library/news-1.md
+      - library/news-2.md
+      - library/news-3.md
+      - library/fsz-1.md
+      - library/fsz-2.md
+      - library/mks-1.md
+      - library/mks-2.md
+      - library/jzm-1.md
+      - library/mqz-1.md
+      - library/mqz-2.md
+      - library/mqz-3.md
+      - library/mzd-1.md
+      - library/slz-1.md
+      - library/slz-2.md
+      - library/ygz-1.md
+      - library/ygz-2.md
+    - "报道":
+      - library/hyb.md
+      - library/tzhy.md
+      - library/zfcg.md
+      - library/ghth.md
+      - library/jdgk.md
+      - library/gkch.md
+      - library/ldr.md
+      - library/ldrtx.md
+      - library/zyzfw.md
+      - library/united-1.md
+      - library/united-2.md
+      - library/wqs-1.md
+      - library/wqs-2.md
+      - library/wqs-3.md
+      - library/wjb-1.md
+      - library/zjw-1.md
+      - library/zjw-2.md
+    - "文献":
+      - library/xjp-1.md
+      - library/xjp-2.md
+      - library/xjp-3.md
+      - library/xjp-4.md
+      - library/xjp-5.md
+      - library/xjp-6.md
+      - library/zy23-1.md
   - "🗒邻域": 
     - notes/index.md
     - "浙江大学本科生课程":
       - "2022-2023秋冬":
         - notes/data.md
         - notes/quan.md
+        - notes/xigai.md
+        - notes/eco.md
+        - notes/na.md
+        - notes/syms.md
+        - notes/pde22.md
+        - notes/gll.md
+        - notes/alg.md
+        - notes/soft.md
       - "2021-2022春夏":
         - notes/model.md
         - notes/pde.md
+        - notes/tdgt.md
+        - notes/szds.md
+        - notes/mg.md
+        - notes/ec.md
+        - notes/junli.md
+        - notes/guanli.md
       - "2021-2022秋冬":
         - notes/ds.md
+        - notes/sf3.md
+        - notes/my.md
+        - notes/ggjj.md
+        - notes/dxwl2.md
+        - notes/dxwlsy.md
+        - notes/ode.md
       - "2020-2021春夏":
         - notes/wxqy.md
+        - notes/dxwl.md
+        - notes/jds.md
+        - notes/xc.md
+        - notes/sf2.md
+        - notes/dxyy4.md
+        - notes/zhigui.md
+      - "2020-2021秋冬":
+        - notes/dxyy3.md
+        - notes/sx.md
+        - notes/sf.md
+        - notes/skd.md
+        - notes/skdsy.md
+        - notes/mks.md
+        - notes/jjf.md
+        - notes/jihe.md
+        - notes/djj.md
     - "计算机科学与技术":
-      - "机器学习":
-        - notes/quan.md
-      - notes/fcpx.md
-      - notes/html-css.md
-      - notes/note0.md
-      - notes/docker.md
+      - "人工智能&机器学习":
+        - notes/cs188.md
+        - notes/cs229.md
+      - "开发":
+        - notes/html-css.md
+        - notes/docker.md
+        - notes/note0.md
+    - "数媒创作":
       - notes/webs.md
+      - notes/fcpx.md
   - "📚目余": 
     - view/index.md
     - "书籍":
       - view/liucx.md
+      - view/longnight.md
+      - view/qpdzsgr.md
     - "音乐":
       - view/lyric.md
     - "视频":
