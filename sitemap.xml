@@ -296,6 +296,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ralvine.github.com/mirinsider/memo/travel/</loc>
+         <lastmod>2023-01-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ralvine.github.com/mirinsider/memo/travel/chuanyu/</loc>
          <lastmod>2023-01-25</lastmod>
          <changefreq>daily</changefreq>
@@ -522,6 +527,11 @@
     </url>
     <url>
          <loc>https://ralvine.github.com/mirinsider/notes/create/webs/</loc>
+         <lastmod>2023-01-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/cs/</loc>
          <lastmod>2023-01-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
