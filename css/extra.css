@@ -70,6 +70,39 @@ li {
     border-radius: 5px;
 }
 
+.badges {
+    margin-top: -2em;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.2em 0.4em;
+    font-size: 85%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+.badge1 {
+    background-color: #FF862F;
+    color: #161616;
+}
+.badge2, .general-badge {
+    background-color: #29ABCA;
+    color: #161616;
+}
+.badge3, .cross-badge {
+    background-color: #FC6255;
+    color: #161616;
+}
+[data-md-color-scheme="default"] .badge1,
+[data-md-color-scheme="default"] .badge2,
+[data-md-color-scheme="default"] .badge3 {
+    color: #FFFFFF;
+}
+
 :root, [data-md-color-scheme=default] {
     --md-default-fg-color: rgba(72, 52, 52, .78);
     --md-default-fg-color--light: rgba(72, 52, 52,.54);
