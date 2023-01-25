@@ -1,3 +1,8 @@
+---
+hide:
+  - feedback
+comments: true
+---
 # 镜幕
 
 !!! note ""

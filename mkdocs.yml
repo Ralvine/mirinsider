@@ -5,6 +5,7 @@ theme:
   icon:
     logo: material/salesforce
   name: material
+  custom_dir: overrides
   favicon: images/favicon.png
   features:
     - navigation.instant
@@ -60,8 +61,24 @@ plugins:
   - tags
   - tags:
       enabled: !ENV [CI, false]
-      tags_file: tags.md
+      tags_file: home/tags.md
 extra:
+  analytics:
+    provider: google
+    property: G-5ECDD2TBHN
+    feedback:
+      title: 本页面对您有帮助吗？
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: 很有帮助！
+          data: 1
+          note: >-
+            谢谢您的反馈！
+        - icon: material/emoticon-sad-outline
+          name: 亟待改进。
+          data: 0
+          note: >- 
+            感谢您的反馈！欢迎通过访问我们的 <a href="https://ralvine.github.io/" target="_blank" rel="noopener">博客</a>以提出进一步建议。
   social:
     - icon: fontawesome/brands/github
       link: https://ralvine.github.io/
@@ -94,7 +111,7 @@ extra:
       link: https://ralvine.github.io/
       name: 访问Ralvine的博客
 extra_css:
-  - extra.css
+  - css/extra.css
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -102,93 +119,104 @@ extra_javascript:
 nav:
   - "📍客廊":
     - index.md
-    - "👨简介": brief.md
-    - "🏷️标签": tags.md
+    - "👨简介": home/brief.md
+    - "🏷️标签": home/tags.md
   - "🖋️胶卷": 
     - memo/index.md
     - "旅行":
-      - memo/chuanyu.md
-      - memo/tibet.md
+      - memo/travel/chuanyu.md
+      - memo/travel/tibet.md
     - "公益服务":
-      - memo/mathqa22.md
-      - memo/xncx.md
-      - memo/zhijiao22.md
+      - memo/commonweal/mathqa22.md
+      - memo/commonweal/xncx.md
+      - memo/commonweal/zhijiao22.md
     - "实践活动":
-      - memo/highschool.md
-      - memo/winter21.md
-      - memo/winter22.md
+      - memo/activity/highschool.md
+      - memo/activity/winter21.md
+      - memo/activity/winter22.md
     - "学术项目":
-      - memo/tran.md
-      - memo/apmcm.md
-      - memo/mathshanshu.md
-      - memo/mathshenzh.md
-      - memo/mcm22.md
-      - memo/modelzhcn.md
-      - memo/modelzju.md
-      - memo/srtp.md
+      - memo/project/tran.md
+      - memo/project/apmcm.md
+      - memo/project/mathshanshu.md
+      - memo/project/mathshenzh.md
+      - memo/project/mcm22.md
+      - memo/project/modelzhcn.md
+      - memo/project/modelzju.md
+      - memo/project/srtp.md
     - "组织工作":
-      - memo/test.md
+      - memo/team/test.md
       - "求是潮工作团队":
-        - memo/test.md
-        - memo/test.md
+        - memo/team/qsc/test.md
+        - memo/team/qsc/test.md
       - "团委学生文体中心":
-        - memo/test.md
-        - memo/test.md
+        - memo/team/wenti/test.md
+        - memo/team/wenti/test.md
       - "信计党支部":
-        - memo/test.md
-        - memo/test.md
+        - memo/team/party/test.md
+        - memo/team/party/test.md
       - "竺可桢学院ITP":
-        - memo/test.md
-        - memo/test.md
+        - memo/team/itp/test.md
+        - memo/team/itp/test.md
       - "ZJUMSC":
-        - memo/test.md
+        - memo/team/msc/test.md
   - "📁镜观": 
     - library/index.md
     - "评论":
-      - library/news-1.md
-      - library/news-2.md
-      - library/news-3.md
-      - library/fsz-1.md
-      - library/fsz-2.md
-      - library/mks-1.md
-      - library/mks-2.md
-      - library/jzm-1.md
-      - library/mqz-1.md
-      - library/mqz-2.md
-      - library/mqz-3.md
-      - library/mzd-1.md
-      - library/slz-1.md
-      - library/slz-2.md
-      - library/ygz-1.md
-      - library/ygz-2.md
+      - library/review/news-1.md
+      - library/review/news-2.md
+      - library/review/news-3.md
+      - library/review/fsz-1.md
+      - library/review/fsz-2.md
+      - library/review/mks-1.md
+      - library/review/mks-2.md
+      - library/review/jzm-1.md
+      - library/review/mqz-1.md
+      - library/review/mqz-2.md
+      - library/review/mqz-3.md
+      - library/review/mzd-1.md
+      - library/review/slz-1.md
+      - library/review/slz-2.md
+      - library/review/ygz-1.md
+      - library/review/ygz-2.md
     - "报道":
-      - library/hyb.md
-      - library/tzhy.md
-      - library/zfcg.md
-      - library/ghth.md
-      - library/jdgk.md
-      - library/gkch.md
-      - library/ldr.md
-      - library/ldrtx.md
-      - library/zyzfw.md
-      - library/united-1.md
-      - library/united-2.md
-      - library/wqs-1.md
-      - library/wqs-2.md
-      - library/wqs-3.md
-      - library/wjb-1.md
-      - library/zjw-1.md
-      - library/zjw-2.md
+      - library/report/hyb.md
+      - library/report/tzhy.md
+      - library/report/zfcg.md
+      - library/report/ghth.md
+      - library/report/jdgk.md
+      - library/report/gkch.md
+      - library/report/ldr.md
+      - library/report/ldrtx.md
+      - library/report/zyzfw.md
+      - library/report/united-1.md
+      - library/report/united-2.md
+      - library/report/wqs-1.md
+      - library/report/wqs-2.md
+      - library/report/wqs-3.md
+      - library/report/wjb-1.md
+      - library/report/zjw-1.md
+      - library/report/zjw-2.md
     - "文献":
-      - library/xjp-1.md
-      - library/xjp-2.md
-      - library/xjp-3.md
-      - library/xjp-4.md
-      - library/xjp-5.md
-      - library/xjp-6.md
-      - library/zy23-1.md
+      - library/files/xjp-1.md
+      - library/files/xjp-2.md
+      - library/files/xjp-3.md
+      - library/files/xjp-4.md
+      - library/files/xjp-5.md
+      - library/files/xjp-6.md
+      - library/files/zy23-1.md
   - "🗒邻域": 
     - notes/index.md
+    - "计算机科学":
+      - "数据分析":
+        - notes/
+      - "人工智能&机器学习":
+        - notes/cs188.md
+        - notes/cs229.md
+      - "开发":
+        - notes/cplusplus.md
+        - notes/html-css.md
+        - notes/docker.md
+        - notes/note0.md
     - "浙江大学本科生课程":
       - "2022-2023秋冬":
         - notes/data.md
@@ -236,15 +264,9 @@ nav:
         - notes/jjf.md
         - notes/jihe.md
         - notes/djj.md
-    - "计算机科学与技术":
-      - "人工智能&机器学习":
-        - notes/cs188.md
-        - notes/cs229.md
-      - "开发":
-        - notes/html-css.md
-        - notes/docker.md
-        - notes/note0.md
-    - "数媒创作":
+    - "产品架构":
+      - notes/test.md
+    - "数字创作":
       - notes/webs.md
       - notes/fcpx.md
   - "📚目余": 
