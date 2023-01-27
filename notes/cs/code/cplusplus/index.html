@@ -1474,7 +1474,7 @@ g++ a.cpp
   /* Set palette on initial load */
   var palette = __md_get("__palette")
   if (palette && typeof palette.color === "object") {
-    var theme = palette.color.scheme === "slate" ? "dark" : "light"
+    var theme = palette.color.scheme === "default" ? "light" : "dark"
     giscus.setAttribute("data-theme", theme) 
   }
 
@@ -1484,7 +1484,7 @@ g++ a.cpp
     ref.addEventListener("change", function() {
       var palette = __md_get("__palette")
       if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "slate" ? "dark" : "light"
+        var theme = palette.color.scheme === "default" ? "light" : "dark"
 
         /* Instruct Giscus to change theme */
         var frame = document.querySelector(".giscus-frame")

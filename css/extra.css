@@ -23,7 +23,7 @@
 }
 
 /* 文章标题 */
-h1 {
+h1, .headerlink {
     font-size: larger;
     font-family: 'Sofia', 'Ma Shan Zheng', 'ZCOOL XiaoWei', serif;
     font-weight: lighter;
@@ -41,7 +41,7 @@ h1 {
 }
 
 /* 标题字体 */
-body {
+body, input {
     font-family: 'Lexend', 'Noto Sans SC', 'Source Code Pro', 'Noto Serif SC', sans-serif, -apple-system, Helvetica, Arial, sans-serif;
 }
 [data-md-color-scheme="default"] body {
@@ -72,7 +72,6 @@ li {
     font-size: small;
 }
 
-
 /* 告示板: 常规和带标题的 */
 .md-typeset .admonition, .md-typeset details {
     border: none;
@@ -81,6 +80,9 @@ li {
 .md-typeset details:not([open]) {
     box-shadow: var(--md-shadow-z2);
     padding-bottom: 0;
+}
+[data-md-color-scheme="default"] .md-typeset .admonition, .md-typeset details {
+    color: #672818
 }
 [data-md-color-scheme="slate"] .md-typeset .admonition, .md-typeset details {
     color: #ffffff
@@ -142,22 +144,6 @@ li {
 [data-md-color-scheme="slate"] .badge2,
 [data-md-color-scheme="slate"] .badge3 {
     color: #FFFFFF;
-}
-
-/* 图片放大 */
-.shadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.zoom {
-    transition: transform ease-in-out 0.5s;
-    cursor: zoom-in;
-}
-.image-zoom-large {
-    transform: scale(1.9);
-    cursor: zoom-out;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 100;
-    position: relative;
 }
 
 :root, [data-md-color-scheme=default] {

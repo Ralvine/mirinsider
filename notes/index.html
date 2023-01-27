@@ -1303,7 +1303,6 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="_1">邻域<a class="headerlink" href="#_1" title="跳转到该部分">¶</a></h1>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/wallhaven-zyxvqy.jpg"><img alt="这是一张图片" class="zoom" src="../images/wallhaven-zyxvqy.jpg" title="MirInsider"/></a></p>
 <div class="admonition note">
 <p><center><b>笔记</b>
 </center></p>
@@ -1327,7 +1326,7 @@
   /* Set palette on initial load */
   var palette = __md_get("__palette")
   if (palette && typeof palette.color === "object") {
-    var theme = palette.color.scheme === "slate" ? "dark" : "light"
+    var theme = palette.color.scheme === "default" ? "light" : "dark"
     giscus.setAttribute("data-theme", theme) 
   }
 
@@ -1337,7 +1336,7 @@
     ref.addEventListener("change", function() {
       var palette = __md_get("__palette")
       if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "slate" ? "dark" : "light"
+        var theme = palette.color.scheme === "default" ? "light" : "dark"
 
         /* Instruct Giscus to change theme */
         var frame = document.querySelector(".giscus-frame")

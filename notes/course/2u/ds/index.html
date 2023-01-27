@@ -2805,7 +2805,7 @@ List|链表 Single/Double-Linked-List <strong>双链表</strong> 表头、尾、
   /* Set palette on initial load */
   var palette = __md_get("__palette")
   if (palette && typeof palette.color === "object") {
-    var theme = palette.color.scheme === "slate" ? "dark" : "light"
+    var theme = palette.color.scheme === "default" ? "light" : "dark"
     giscus.setAttribute("data-theme", theme) 
   }
 
@@ -2815,7 +2815,7 @@ List|链表 Single/Double-Linked-List <strong>双链表</strong> 表头、尾、
     ref.addEventListener("change", function() {
       var palette = __md_get("__palette")
       if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "slate" ? "dark" : "light"
+        var theme = palette.color.scheme === "default" ? "light" : "dark"
 
         /* Instruct Giscus to change theme */
         var frame = document.querySelector(".giscus-frame")
