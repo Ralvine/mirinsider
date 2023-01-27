@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 数学建模美赛
 
 !!! quote "Report"

@@ -2,6 +2,7 @@
 tags:
   - 历史
   - 人物
+comments: true
 ---
 
 # 青年王岐山

@@ -1,6 +1,7 @@
 ---
 tags:
   - 文化
+comments: true
 ---
 
 # 论中文之西化

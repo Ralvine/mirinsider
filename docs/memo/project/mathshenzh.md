@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 数学建模深圳杯比赛
 
 !!! quote "Report"

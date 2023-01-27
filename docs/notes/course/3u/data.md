@@ -1,0 +1,85 @@
+---
+tags:
+  - 数据科学
+hide: 
+  - tags
+comments: true
+---
+
+# 数据科学的数学基础
+
+<div class="badges">
+<span class="badge badge1">数据科学</span>
+</div>
+
+## 课程概况
+!!! abstract ""
+    - **类型** 🎓 数学科学学院（专业方向课程 大数据建模与计算）
+    - **时段** 🕙 2022-2023 秋冬
+    - **教师** 🧑‍🏫 [赖俊](https://person.zju.edu.cn/laijun_cn)（倪天昊）
+    - **内容** 🗞️ 介绍关于数据科学的理论，介绍了似然估计、回归、降维、聚类等算法及其推导证明，涉及概率论、高等代数、数值代数、数值分析等方面的知识。
+    - **考核** 📝 平时理论作业+上机作业+期末考试
+    - **回放** 🔗 [智云课堂](https://classroom.zju.edu.cn/coursedetail?course_id=46963&tenant_code=112)
+    - **教材** 📙 Jeff M. Phillips, Mathematical Foundations for Data Analysis.
+
+## 大纲
+!!! note ""
+    - **CH0.** 课程介绍
+    - **CH1.** 概率论回顾
+        - 样本空间
+        - 条件概率和独立性
+        - 分布函数
+        - 期望和方差
+        - 联合边际概率和条件概率
+        - 贝叶斯法则
+        - 极大似然估计和贝叶斯推断
+    - **CH2.** 收敛和采样
+        - 采样和估计
+        - 概率近似正确
+        - Markov, Chebyshev, Chernoff-Hoeffding 不等式
+        - Union Bound
+        - 重采样
+    - **CH3.** *
+    - **CH4.** 距离
+        - 度量
+        - $L_p$ 距离
+        - M 距离, Cosine 距离, Angular 距离和 KL 散度
+        - 集合的 Jaccard 距离
+        - 相似度及其衍生的距离
+    - **CH5.** 线性回归
+        - 简单线性回归
+        - 多解释变量
+        - 多项式回归
+        - 交叉验证
+        - Tikhonov 正则化
+        - Lasso 算法和岭回归
+        - 匹配追踪
+    - **CH6.** 梯度下降
+        - 凸函数
+        - 梯度下降法, 线搜索和 backtracking
+        - 学习率
+        - 随机梯度下降法 
+    - **CH7.** 降维
+        - 数据矩阵
+        - SSE
+        - 投影和范数意义下的k阶最佳逼近
+        - 主成分分析
+        - MDS
+    - **CH8.** 聚类
+        - 维诺图
+        - Delaunay 三角剖分
+        - k-中心/均值/Medium/Mediod 聚类
+        - 冈萨雷斯算法
+        - Lloyd 算法
+        - 软聚类
+
+## 学习笔记
+
+## 课程作业
+
+### 理论作业
+
+### 上机作业
+
+
+

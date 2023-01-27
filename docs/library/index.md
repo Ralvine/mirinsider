@@ -1,3 +1,8 @@
+---
+hide:
+  - feedback
+---
+
 # 镜观
 
 !!! note ""

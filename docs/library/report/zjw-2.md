@@ -1,6 +1,7 @@
 ---
 tags:
   - 时局
+comments: true
 ---
 
 # 中央巡视组“钦差”出巡

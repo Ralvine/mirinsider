@@ -2,6 +2,7 @@
 tags:
   - 时局
   - 人物
+comments: true
 ---
 
 # 王岐山脸谱

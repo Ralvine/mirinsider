@@ -1,6 +1,7 @@
 ---
 tags:
   - 时局
+comments: true
 ---
 
 # 领导人家庭生活首度公开

@@ -1,6 +1,7 @@
 ---
 tags:
   - 文化
+comments: true
 ---
 
 # 中文的常态与变态

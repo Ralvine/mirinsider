@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 数学建模APMCM比赛
 
 !!! quote "Report"

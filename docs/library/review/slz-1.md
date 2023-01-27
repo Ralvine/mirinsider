@@ -2,6 +2,7 @@
 tags:
   - 意识形态
   - 思潮
+comments: true
 ---
 
 # 阿拉伯之春在欧洲

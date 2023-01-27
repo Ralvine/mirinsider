@@ -1,6 +1,7 @@
 ---
 tags: 
   - 社会实践
+comments: true
 ---
 # 大二寒假社会实践
 

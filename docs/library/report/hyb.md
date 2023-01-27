@@ -2,6 +2,7 @@
 tags:
   - 历史
   - 人物
+comments: true
 ---
 
 # 胡耀邦在中宣部

@@ -2,6 +2,7 @@
 tags:
   - 意识形态
   - 思潮
+comments: true
 ---
 
 # 中国精英政治的转变
