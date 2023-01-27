@@ -851,6 +851,54 @@
     学习概况
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#object-oriented">
+    面向对象 (Object-Oriented)
+  </a>
+<nav aria-label="面向对象 (Object-Oriented)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    基本原理
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    面向对象编程
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    编译
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+    头文件
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class">
+    类的设计 (Class)
+  </a>
+<nav aria-label="类的设计 (Class)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ex-ticket-machine">
+    Ex: Ticket Machine
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#g">
+    g++
+  </a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -1324,6 +1372,54 @@
     学习概况
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#object-oriented">
+    面向对象 (Object-Oriented)
+  </a>
+<nav aria-label="面向对象 (Object-Oriented)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    基本原理
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    面向对象编程
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    编译
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+    头文件
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class">
+    类的设计 (Class)
+  </a>
+<nav aria-label="类的设计 (Class)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ex-ticket-machine">
+    Ex: Ticket Machine
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#g">
+    g++
+  </a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </div>
@@ -1348,80 +1444,135 @@
 <li><a href="https://www.bilibili.com/video/BV1dE41167hJ/?spm_id_from=333.337.search-card.all.click&amp;vd_source=e81e93bc6892fd0d7e19b265d26a2b3a">翁恺 C++</a></li>
 </ul>
 </div>
-<p>面向对象 (Object-Oriented)
-基本原理
-- object=entity (实体): attributes+services (属性+服务)
-- 数据 (静态/动态): visible/invisible
-- 映射: 问题域 -&gt; 解决域
-- 和面向过程的区别
-  - 描述事情发生的流程/存在实体导向解决
-  - C++: Struct -&gt; Class (Private+Public) 给结构体提供操作 (operator)
-- Design+Implementations (算法的设计+编写)
-面向对象编程
-- Objects: 实体, 收发消息: Data+Method (数据+方法)
-  - Receivers: 接收者自行决定如何操作
-  - Messages (消息) 对 Receiver 的作用
-    - 改变状态
-    - 返回结果
-- Class: 对 Object 实例的抽象
-  - 类定义对象的属性 所有对象都有一种类型
-  - 一切都是对象
-  - 程序是一系列通过彼此收发消息实现做什么的对象
-  - 接口: 同类对象可以接受相同消息 (Ex. 灯泡)
-  - 函数
-- Encapsulation (封装)
-编译
-- 编译预处理#include
-  - 编译器将会自动将被引用的库/文件代码前置
-  - "xx.h" 当前目录
-  - <xx.h> 系统目录
-  - <xx>="xx.h"
-- 一个.cpp文件即一个编译单元
-头文件
-- Declarations (声明)
-- Definitions (定义)
-- 头文件中的宏定义 #define <em>H</em> 
-  - 避免导入头文件时重复定义</xx></xx.h></p>
-<p>类的设计 (Class)
-- 解析符::
-Ex: Ticket Machine
-- TicketMachine.h</p>
-<h1 id="ifndef-ticketmachine_h_">ifndef TICKETMACHINE_H_<a class="headerlink" href="#ifndef-ticketmachine_h_" title="跳转到该部分">¶</a></h1>
-<h1 id="define-ticketmachine_h_">define TICKETMACHINE_H_<a class="headerlink" href="#define-ticketmachine_h_" title="跳转到该部分">¶</a></h1>
-<p>class TicketMachine {
-public:
-    TicketMachine();
-    virtual ~TicketMachine();
-    void showPrompt();
-    void insertMoney(int money);
-    void showBalance();
-    void printTicket();
-    void showTotal();
-private:
-    const int PRICE;
-    int balance;
-    int total;
-};</p>
-<h1 id="endif">endif<a class="headerlink" href="#endif" title="跳转到该部分">¶</a></h1>
+<h2 id="object-oriented">面向对象 (Object-Oriented)<a class="headerlink" href="#object-oriented" title="跳转到该部分">¶</a></h2>
+<h3 id="_2">基本原理<a class="headerlink" href="#_2" title="跳转到该部分">¶</a></h3>
+<ul>
+<li>object=entity (实体): attributes+services (属性+服务)</li>
+<li>数据 (静态/动态): visible/invisible</li>
+<li>映射: 问题域 -&gt; 解决域</li>
+<li>和面向过程的区别</li>
+<li>描述事情发生的流程/存在实体导向解决</li>
+<li>C++: Struct -&gt; Class (Private+Public) 给结构体提供操作 (operator)</li>
+<li>Design+Implementations (算法的设计+编写)</li>
+</ul>
+<h3 id="_3">面向对象编程<a class="headerlink" href="#_3" title="跳转到该部分">¶</a></h3>
+<ul>
+<li>Objects: 实体, 收发消息: Data+Method (数据+方法)</li>
+<li>Receivers: 接收者自行决定如何操作</li>
+<li>Messages (消息) 对 Receiver 的作用<ul>
+<li>改变状态</li>
+<li>返回结果</li>
+</ul>
+</li>
+<li>Class: 对 Object 实例的抽象</li>
+<li>类定义对象的属性 所有对象都有一种类型</li>
+<li>一切都是对象</li>
+<li>程序是一系列通过彼此收发消息实现做什么的对象</li>
+<li>接口: 同类对象可以接受相同消息 (Ex. 灯泡)</li>
+<li>函数</li>
+<li>Encapsulation (封装)</li>
+</ul>
+<h3 id="_4">编译<a class="headerlink" href="#_4" title="跳转到该部分">¶</a></h3>
+<ul>
+<li>编译预处理#include</li>
+<li>编译器将会自动将被引用的库/文件代码前置</li>
+<li>"xx.h" 当前目录</li>
+<li><xx.h> 系统目录</xx.h></li>
+<li><xx>="xx.h"</xx></li>
+<li>一个.cpp文件即一个编译单元</li>
+</ul>
+<h3 id="_5">头文件<a class="headerlink" href="#_5" title="跳转到该部分">¶</a></h3>
+<ul>
+<li>Declarations (声明)</li>
+<li>Definitions (定义)</li>
+<li>头文件中的宏定义 #define <em>H</em> </li>
+<li>避免导入头文件时重复定义</li>
+</ul>
+<h2 id="class">类的设计 (Class)<a class="headerlink" href="#class" title="跳转到该部分">¶</a></h2>
+<ul>
+<li>解析符 <code>::</code></li>
+</ul>
+<h3 id="ex-ticket-machine">Ex: Ticket Machine<a class="headerlink" href="#ex-ticket-machine" title="跳转到该部分">¶</a></h3>
+<ul>
+<li>TicketMachine.h</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#ifndef TICKETMACHINE_H_</span>
+<span class="cp">#define TICKETMACHINE_H_</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">TicketMachine</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">TicketMachine</span><span class="p">();</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">TicketMachine</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">showPrompt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">insertMoney</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">money</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">showBalance</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">printTicket</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">showTotal</span><span class="p">();</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">PRICE</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">balance</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="cp">#endif</span>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li>TicketMachine.cpp</li>
 </ul>
-<h1 id="include-ticketmachineh">include "TicketMachine.h"<a class="headerlink" href="#include-ticketmachineh" title="跳转到该部分">¶</a></h1>
-<h1 id="include">include <iostream><a class="headerlink" href="#include" title="跳转到该部分">¶</a></iostream></h1>
-<p>TicketMachine::TicketMachine() {
-}</p>
-<p>TicketMachine::~TicketMachine() {
-}</p>
-<p>void TicketMachine:: showPrompt() {
-    std::cout &lt;&lt; "something." &lt;&lt; std::endl;
-}</p>
-<p>void TicketMachine:: insertMoney(int money) {
-    balance += money;
-}</p>
-<p>g++
-g++ a.cpp
-- --save-temps
-- -Wall 输出所有Warning</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">"TicketMachine.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+
+<span class="n">TicketMachine</span><span class="o">::</span><span class="n">TicketMachine</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="p">}</span>
+
+<span class="n">TicketMachine</span><span class="o">::~</span><span class="n">TicketMachine</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">TicketMachine</span><span class="o">::</span><span class="w"> </span><span class="n">showPrompt</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"something."</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">TicketMachine</span><span class="o">::</span><span class="w"> </span><span class="n">insertMoney</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">money</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">balance</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">money</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="g">g++<a class="headerlink" href="#g" title="跳转到该部分">¶</a></h3>
+<p><code>g++ a.cpp</code></p>
+<ul>
+<li>--save-temps</li>
+<li>-Wall 输出所有Warning</li>
+</ul>
 <hr/>
 <div class="md-source-file">
 <small>
@@ -1466,36 +1617,36 @@ g++ a.cpp
 </div>
 </fieldset>
 </form>
-<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOIyx7gM4CTzL6" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="0" data-repo="ralvine/mirinsider" data-repo-id="R_kgDOIyx7gA" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOIyx7gM4CTzL6" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="0" data-repo="ralvine/mirinsider" data-repo-id="R_kgDOIyx7gA" data-strict="0" data-theme="transparent_dark" src="https://giscus.app/client.js">
 </script>
 <script>
-  var giscus = document.querySelector("script[src*=giscus]")
+    var giscus = document.querySelector("script[src*=giscus]")
 
-  /* Set palette on initial load */
-  var palette = __md_get("__palette")
-  if (palette && typeof palette.color === "object") {
-    var theme = palette.color.scheme === "default" ? "light" : "dark"
-    giscus.setAttribute("data-theme", theme) 
-  }
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    
 
-  /* Register event handlers after documented loaded */
-  document.addEventListener("DOMContentLoaded", function() {
-    var ref = document.querySelector("[data-md-component=palette]")
-    ref.addEventListener("change", function() {
-      var palette = __md_get("__palette")
-      if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "default" ? "light" : "dark"
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
 
-        /* Instruct Giscus to change theme */
-        var frame = document.querySelector(".giscus-frame")
-        frame.contentWindow.postMessage(
-          { giscus: { setConfig: { theme } } },
-          "https://giscus.app"
-        )
-      }
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        
+      })
     })
-  })
-</script>
+  </script>
 </article>
 </div>
 </div>

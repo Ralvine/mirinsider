@@ -1480,36 +1480,36 @@
 </div>
 </fieldset>
 </form>
-<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOIyx7gM4CTzL6" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="0" data-repo="ralvine/mirinsider" data-repo-id="R_kgDOIyx7gA" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOIyx7gM4CTzL6" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="0" data-repo="ralvine/mirinsider" data-repo-id="R_kgDOIyx7gA" data-strict="0" data-theme="transparent_dark" src="https://giscus.app/client.js">
 </script>
 <script>
-  var giscus = document.querySelector("script[src*=giscus]")
+    var giscus = document.querySelector("script[src*=giscus]")
 
-  /* Set palette on initial load */
-  var palette = __md_get("__palette")
-  if (palette && typeof palette.color === "object") {
-    var theme = palette.color.scheme === "default" ? "light" : "dark"
-    giscus.setAttribute("data-theme", theme) 
-  }
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    
 
-  /* Register event handlers after documented loaded */
-  document.addEventListener("DOMContentLoaded", function() {
-    var ref = document.querySelector("[data-md-component=palette]")
-    ref.addEventListener("change", function() {
-      var palette = __md_get("__palette")
-      if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "default" ? "light" : "dark"
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
 
-        /* Instruct Giscus to change theme */
-        var frame = document.querySelector(".giscus-frame")
-        frame.contentWindow.postMessage(
-          { giscus: { setConfig: { theme } } },
-          "https://giscus.app"
-        )
-      }
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        
+      })
     })
-  })
-</script>
+  </script>
 </article>
 </div>
 </div>
