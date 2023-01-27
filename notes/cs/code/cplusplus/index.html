@@ -8,27 +8,27 @@
       
       
       
-        <link rel="canonical" href="https://ralvine.github.com/mirinsider/library/files/zy23-1/">
+        <link rel="canonical" href="https://ralvine.github.com/mirinsider/notes/cs/code/cplusplus/">
       
       
-        <link rel="prev" href="../xjp-6/">
+        <link rel="prev" href="../../ai/cs229/">
       
       
-        <link rel="next" href="../../../notes/">
+        <link rel="next" href="../html-css/">
       
-      <link rel="icon" href="../../../images/favicon.png">
+      <link rel="icon" href="../../../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
-        <title>资本的复兴和脑力无产者的左转 - MirInsider 镜幕</title>
+        <title>C++ 基础 - MirInsider 镜幕</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.558e4712.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.558e4712.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.2505c338.min.css">
       
       
 
@@ -44,9 +44,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../../../css/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#c" class="md-skip">
           跳转至
         </a>
       
@@ -101,7 +101,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="MirInsider 镜幕" class="md-header__button md-logo" aria-label="MirInsider 镜幕" data-md-component="logo">
+    <a href="../../../.." title="MirInsider 镜幕" class="md-header__button md-logo" aria-label="MirInsider 镜幕" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.38 6.37c-.7 0-1.31.21-1.91.41-.7-1.21-2.01-2.01-3.42-2.01-1.1 0-2.1.5-2.81 1.2-.8-1-2.01-1.71-3.41-1.71C4.5 4.26 2.5 6.17 2.5 8.5c0 .59.21 1.19.41 1.79A3.678 3.678 0 0 0 1 13.5c0 2 1.61 3.72 3.62 3.72.3 0 .6 0 .8-.1.4 1.51 1.91 2.62 3.72 2.62 1.7 0 3.11-1.01 3.61-2.42.51.21 1.01.41 1.51.41 1.31 0 2.51-.73 3.11-1.81.31.08.63.08.91.08 2.61 0 4.72-2.09 4.72-4.8.1-2.7-2-4.83-4.62-4.83Z"/></svg>
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              资本的复兴和脑力无产者的左转
+              C++ 基础
             
           </span>
         </div>
@@ -210,7 +210,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         📍客廊
       </a>
     </li>
@@ -226,8 +226,24 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../memo/" class="md-tabs__link">
+      <a href="../../../../memo/" class="md-tabs__link">
         🖋️胶卷
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../library/" class="md-tabs__link">
+        📁镜观
       </a>
     </li>
   
@@ -244,23 +260,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link md-tabs__link--active">
-        📁镜观
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../notes/" class="md-tabs__link">
+      <a href="../../../" class="md-tabs__link md-tabs__link--active">
         🗒邻域
       </a>
     </li>
@@ -276,7 +276,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../view/" class="md-tabs__link">
+      <a href="../../../../view/" class="md-tabs__link">
         📚目余
       </a>
     </li>
@@ -294,6 +294,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -304,7 +306,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MirInsider 镜幕" class="md-nav__button md-logo" aria-label="MirInsider 镜幕" data-md-component="logo">
+    <a href="../../../.." title="MirInsider 镜幕" class="md-nav__button md-logo" aria-label="MirInsider 镜幕" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.38 6.37c-.7 0-1.31.21-1.91.41-.7-1.21-2.01-2.01-3.42-2.01-1.1 0-2.1.5-2.81 1.2-.8-1-2.01-1.71-3.41-1.71C4.5 4.26 2.5 6.17 2.5 8.5c0 .59.21 1.19.41 1.79A3.678 3.678 0 0 0 1 13.5c0 2 1.61 3.72 3.62 3.72.3 0 .6 0 .8-.1.4 1.51 1.91 2.62 3.72 2.62 1.7 0 3.11-1.01 3.61-2.42.51.21 1.01.41 1.51.41 1.31 0 2.51-.73 3.11-1.81.31.08.63.08.91.08 2.61 0 4.72-2.09 4.72-4.8.1-2.7-2-4.83-4.62-4.83Z"/></svg>
@@ -345,7 +347,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../..">📍客廊</a>
+          <a href="../../../..">📍客廊</a>
           
             <label for="__nav_1">
               <span class="md-nav__icon md-icon"></span>
@@ -368,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../home/brief/" class="md-nav__link">
+      <a href="../../../../home/brief/" class="md-nav__link">
         👨简介
       </a>
     </li>
@@ -382,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../home/tags/" class="md-nav__link">
+      <a href="../../../../home/tags/" class="md-nav__link">
         🏷️标签
       </a>
     </li>
@@ -432,7 +434,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../memo/">🖋️胶卷</a>
+          <a href="../../../../memo/">🖋️胶卷</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -477,7 +479,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../memo/travel/">旅行</a>
+          <a href="../../../../memo/travel/">旅行</a>
           
             <label for="__nav_2_2">
               <span class="md-nav__icon md-icon"></span>
@@ -500,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/travel/chuanyu/" class="md-nav__link">
+      <a href="../../../../memo/travel/chuanyu/" class="md-nav__link">
         川渝
       </a>
     </li>
@@ -514,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/travel/tibet/" class="md-nav__link">
+      <a href="../../../../memo/travel/tibet/" class="md-nav__link">
         西藏
       </a>
     </li>
@@ -570,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/commonweal/mathqa22/" class="md-nav__link">
+      <a href="../../../../memo/commonweal/mathqa22/" class="md-nav__link">
         高等数学答疑
       </a>
     </li>
@@ -584,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/commonweal/xncx/" class="md-nav__link">
+      <a href="../../../../memo/commonweal/xncx/" class="md-nav__link">
         心暖晨曦
       </a>
     </li>
@@ -598,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/commonweal/zhijiao22/" class="md-nav__link">
+      <a href="../../../../memo/commonweal/zhijiao22/" class="md-nav__link">
         衢州支教
       </a>
     </li>
@@ -654,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/activity/highschool/" class="md-nav__link">
+      <a href="../../../../memo/activity/highschool/" class="md-nav__link">
         回访母校
       </a>
     </li>
@@ -668,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/activity/winter21/" class="md-nav__link">
+      <a href="../../../../memo/activity/winter21/" class="md-nav__link">
         大一寒假社会实践
       </a>
     </li>
@@ -682,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/activity/winter22/" class="md-nav__link">
+      <a href="../../../../memo/activity/winter22/" class="md-nav__link">
         大二寒假社会实践
       </a>
     </li>
@@ -748,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/project/tran/" class="md-nav__link">
+      <a href="../../../../memo/project/tran/" class="md-nav__link">
         最优运输与蒙日-安培方程
       </a>
     </li>
@@ -762,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/project/apmcm/" class="md-nav__link">
+      <a href="../../../../memo/project/apmcm/" class="md-nav__link">
         数学建模APMCM比赛
       </a>
     </li>
@@ -776,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/project/mathshanshu/" class="md-nav__link">
+      <a href="../../../../memo/project/mathshanshu/" class="md-nav__link">
         数学建模杉数杯比赛
       </a>
     </li>
@@ -790,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/project/mathshenzh/" class="md-nav__link">
+      <a href="../../../../memo/project/mathshenzh/" class="md-nav__link">
         数学建模深圳杯比赛
       </a>
     </li>
@@ -804,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/project/mcm22/" class="md-nav__link">
+      <a href="../../../../memo/project/mcm22/" class="md-nav__link">
         数学建模美赛
       </a>
     </li>
@@ -818,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/project/modelzhcn/" class="md-nav__link">
+      <a href="../../../../memo/project/modelzhcn/" class="md-nav__link">
         数学建模国赛
       </a>
     </li>
@@ -832,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/project/modelzju/" class="md-nav__link">
+      <a href="../../../../memo/project/modelzju/" class="md-nav__link">
         数学建模校赛
       </a>
     </li>
@@ -846,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/project/srtp/" class="md-nav__link">
+      <a href="../../../../memo/project/srtp/" class="md-nav__link">
         SRTP
       </a>
     </li>
@@ -908,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/team/test.md" class="md-nav__link">
+      <a href="../../../../memo/team/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -955,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/team/qsc/test.md" class="md-nav__link">
+      <a href="../../../../memo/team/qsc/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -969,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/team/qsc/test.md" class="md-nav__link">
+      <a href="../../../../memo/team/qsc/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -1023,7 +1025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/team/wenti/test.md" class="md-nav__link">
+      <a href="../../../../memo/team/wenti/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -1037,7 +1039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/team/wenti/test.md" class="md-nav__link">
+      <a href="../../../../memo/team/wenti/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -1091,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/team/party/test.md" class="md-nav__link">
+      <a href="../../../../memo/team/party/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -1105,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/team/party/test.md" class="md-nav__link">
+      <a href="../../../../memo/team/party/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -1159,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/team/itp/test.md" class="md-nav__link">
+      <a href="../../../../memo/team/itp/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -1173,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/team/itp/test.md" class="md-nav__link">
+      <a href="../../../../memo/team/itp/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -1225,7 +1227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memo/team/msc/test.md" class="md-nav__link">
+      <a href="../../../../memo/team/msc/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -1259,16 +1261,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
         
@@ -1287,7 +1287,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">📁镜观</a>
+          <a href="../../../../library/">📁镜观</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -1371,7 +1371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/news-1/" class="md-nav__link">
+      <a href="../../../../library/review/news-1/" class="md-nav__link">
         三十年新闻立法历程与思考
       </a>
     </li>
@@ -1385,7 +1385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/news-2/" class="md-nav__link">
+      <a href="../../../../library/review/news-2/" class="md-nav__link">
         2015 中国新闻立法之争解读
       </a>
     </li>
@@ -1399,7 +1399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/news-3/" class="md-nav__link">
+      <a href="../../../../library/review/news-3/" class="md-nav__link">
         新闻立法之路
       </a>
     </li>
@@ -1413,7 +1413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/fsz-1/" class="md-nav__link">
+      <a href="../../../../library/review/fsz-1/" class="md-nav__link">
         全输-全赢博弈与当代中国政治的变迁与改革
       </a>
     </li>
@@ -1427,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/fsz-2/" class="md-nav__link">
+      <a href="../../../../library/review/fsz-2/" class="md-nav__link">
         中国精英政治的转变
       </a>
     </li>
@@ -1441,7 +1441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/mks-1/" class="md-nav__link">
+      <a href="../../../../library/review/mks-1/" class="md-nav__link">
         我学的不是马克思主义
       </a>
     </li>
@@ -1455,7 +1455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/mks-2/" class="md-nav__link">
+      <a href="../../../../library/review/mks-2/" class="md-nav__link">
         路易·波拿巴的雾月十八日
       </a>
     </li>
@@ -1469,7 +1469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/jzm-1/" class="md-nav__link">
+      <a href="../../../../library/review/jzm-1/" class="md-nav__link">
         中文互联网语境下膜蛤文化的传播学研究
       </a>
     </li>
@@ -1483,7 +1483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/mqz-1/" class="md-nav__link">
+      <a href="../../../../library/review/mqz-1/" class="md-nav__link">
         给中国新媒体的八条标准
       </a>
     </li>
@@ -1497,7 +1497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/mqz-2/" class="md-nav__link">
+      <a href="../../../../library/review/mqz-2/" class="md-nav__link">
         左派和民族主义联姻下的当代中国
       </a>
     </li>
@@ -1511,7 +1511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/mqz-3/" class="md-nav__link">
+      <a href="../../../../library/review/mqz-3/" class="md-nav__link">
         寻找初心，新青年的“6+1”攻略
       </a>
     </li>
@@ -1525,7 +1525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/mzd-1/" class="md-nav__link">
+      <a href="../../../../library/review/mzd-1/" class="md-nav__link">
         将革命进行到底——1949年新年贺词
       </a>
     </li>
@@ -1539,7 +1539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/slz-1/" class="md-nav__link">
+      <a href="../../../../library/review/slz-1/" class="md-nav__link">
         阿拉伯之春在欧洲
       </a>
     </li>
@@ -1553,7 +1553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/slz-2/" class="md-nav__link">
+      <a href="../../../../library/review/slz-2/" class="md-nav__link">
         单一政党模式下的中国崛起
       </a>
     </li>
@@ -1567,7 +1567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/ygz-1/" class="md-nav__link">
+      <a href="../../../../library/review/ygz-1/" class="md-nav__link">
         中文的常态与变态
       </a>
     </li>
@@ -1581,7 +1581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../review/ygz-2/" class="md-nav__link">
+      <a href="../../../../library/review/ygz-2/" class="md-nav__link">
         论中文之西化
       </a>
     </li>
@@ -1665,7 +1665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/hyb/" class="md-nav__link">
+      <a href="../../../../library/report/hyb/" class="md-nav__link">
         胡耀邦在中宣部
       </a>
     </li>
@@ -1679,7 +1679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/tzhy/" class="md-nav__link">
+      <a href="../../../../library/report/tzhy/" class="md-nav__link">
         浙江黄岩撤市设区之争：一个地方人大的十年之痒
       </a>
     </li>
@@ -1693,7 +1693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/zfcg/" class="md-nav__link">
+      <a href="../../../../library/report/zfcg/" class="md-nav__link">
         果皮箱、炒菜灶、缉私艇、死囚车：鲜为人知，围绕着政府的那些小生意
       </a>
     </li>
@@ -1707,7 +1707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/ghth/" class="md-nav__link">
+      <a href="../../../../library/report/ghth/" class="md-nav__link">
         人人都恨官话套话，但这就是规则：官场“裹脚布”为何越来越多
       </a>
     </li>
@@ -1721,7 +1721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/jdgk/" class="md-nav__link">
+      <a href="../../../../library/report/jdgk/" class="md-nav__link">
         军队透明化迈出一大步：集团军番号首度公开
       </a>
     </li>
@@ -1735,7 +1735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/gkch/" class="md-nav__link">
+      <a href="../../../../library/report/gkch/" class="md-nav__link">
         公务宴请“退订潮”“两会”接待降标准：中央亮剑“舌尖上的浪费”
       </a>
     </li>
@@ -1749,7 +1749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/ldr/" class="md-nav__link">
+      <a href="../../../../library/report/ldr/" class="md-nav__link">
         领导人家庭生活首度公开
       </a>
     </li>
@@ -1763,7 +1763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/ldrtx/" class="md-nav__link">
+      <a href="../../../../library/report/ldrtx/" class="md-nav__link">
         站好最后一班岗：老常委们“归隐”之前
       </a>
     </li>
@@ -1777,7 +1777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/zyzfw/" class="md-nav__link">
+      <a href="../../../../library/report/zyzfw/" class="md-nav__link">
         历经20年扩权回归“务虚办大事”：中央政法委“转身”
       </a>
     </li>
@@ -1791,7 +1791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/united-1/" class="md-nav__link">
+      <a href="../../../../library/report/united-1/" class="md-nav__link">
         我在中央统战部做知识分子工作的往事
       </a>
     </li>
@@ -1805,7 +1805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/united-2/" class="md-nav__link">
+      <a href="../../../../library/report/united-2/" class="md-nav__link">
         八十年代多党合作方案推动纪实
       </a>
     </li>
@@ -1819,7 +1819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/wqs-1/" class="md-nav__link">
+      <a href="../../../../library/report/wqs-1/" class="md-nav__link">
         青年王岐山
       </a>
     </li>
@@ -1833,7 +1833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/wqs-2/" class="md-nav__link">
+      <a href="../../../../library/report/wqs-2/" class="md-nav__link">
         王岐山政协常委会反腐直击
       </a>
     </li>
@@ -1847,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/wqs-3/" class="md-nav__link">
+      <a href="../../../../library/report/wqs-3/" class="md-nav__link">
         王岐山脸谱
       </a>
     </li>
@@ -1861,7 +1861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/wjb-1/" class="md-nav__link">
+      <a href="../../../../library/report/wjb-1/" class="md-nav__link">
         上下互动：温家宝外媒访谈实录
       </a>
     </li>
@@ -1875,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/zjw-1/" class="md-nav__link">
+      <a href="../../../../library/report/zjw-1/" class="md-nav__link">
         中纪委“打虎”80年
       </a>
     </li>
@@ -1889,7 +1889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../report/zjw-2/" class="md-nav__link">
+      <a href="../../../../library/report/zjw-2/" class="md-nav__link">
         中央巡视组“钦差”出巡
       </a>
     </li>
@@ -1908,16 +1908,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
       
       
         
@@ -1937,7 +1935,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3_4" tabindex="0" aria-expanded="true">
+        <label class="md-nav__link" for="__nav_3_4" tabindex="0" aria-expanded="false">
           文献
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -1955,7 +1953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xjp-1/" class="md-nav__link">
+      <a href="../../../../library/files/xjp-1/" class="md-nav__link">
         在第十八届中央纪律检查委员会第六次全体会议上的讲话
       </a>
     </li>
@@ -1969,7 +1967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xjp-2/" class="md-nav__link">
+      <a href="../../../../library/files/xjp-2/" class="md-nav__link">
         关于《中共中央关于全面深化改革若干重大问题的决定》的说明
       </a>
     </li>
@@ -1983,7 +1981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xjp-3/" class="md-nav__link">
+      <a href="../../../../library/files/xjp-3/" class="md-nav__link">
         关于《中共中央关于全面推进依法治国若干重大问题的决定》的说明
       </a>
     </li>
@@ -1997,7 +1995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xjp-4/" class="md-nav__link">
+      <a href="../../../../library/files/xjp-4/" class="md-nav__link">
         关于《关于新形势下党内政治生活的若干准则》和《中国共产党党内监督条例》的说明
       </a>
     </li>
@@ -2011,7 +2009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xjp-5/" class="md-nav__link">
+      <a href="../../../../library/files/xjp-5/" class="md-nav__link">
         在第十二届全国人民代表大会第一次会议上的讲话
       </a>
     </li>
@@ -2025,7 +2023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xjp-6/" class="md-nav__link">
+      <a href="../../../../library/files/xjp-6/" class="md-nav__link">
         习近平时代：什么样的人可以进入中共高层
       </a>
     </li>
@@ -2037,66 +2035,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          资本的复兴和脑力无产者的左转
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../library/files/zy23-1/" class="md-nav__link">
         资本的复兴和脑力无产者的左转
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1978-1992" class="md-nav__link">
-    1978-1992
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1992-2008" class="md-nav__link">
-    1992-2008
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2008" class="md-nav__link">
-    2008至今
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2121,14 +2064,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
         
@@ -2149,7 +2094,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../notes/">🗒邻域</a>
+          <a href="../../../">🗒邻域</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -2170,14 +2115,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
       
       
         
@@ -2196,7 +2143,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../notes/cs/">计算机科学</a>
+          <a href="../../">计算机科学</a>
           
             <label for="__nav_4_2">
               <span class="md-nav__icon md-icon"></span>
@@ -2250,7 +2197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/cs/data/test.md" class="md-nav__link">
+      <a href="../../data/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -2304,7 +2251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/cs/ai/cs188/" class="md-nav__link">
+      <a href="../../ai/cs188/" class="md-nav__link">
         CS188: 人工智能导论
       </a>
     </li>
@@ -2318,7 +2265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/cs/ai/cs229/" class="md-nav__link">
+      <a href="../../ai/cs229/" class="md-nav__link">
         CS229: 机器学习
       </a>
     </li>
@@ -2337,14 +2284,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_2_4" type="checkbox" id="__nav_4_2_4" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_2_4" type="checkbox" id="__nav_4_2_4" checked>
       
       
         
@@ -2358,7 +2307,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_2_4" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_4_2_4" tabindex="0" aria-expanded="true">
           开发
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -2374,11 +2323,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../notes/cs/code/cplusplus/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          C++ 基础
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         C++ 基础
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    学习概况
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2390,7 +2387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/cs/code/html-css/" class="md-nav__link">
+      <a href="../html-css/" class="md-nav__link">
         CSS 语法小记
       </a>
     </li>
@@ -2404,7 +2401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/cs/code/docker/" class="md-nav__link">
+      <a href="../docker/" class="md-nav__link">
         Docker 手册
       </a>
     </li>
@@ -2418,7 +2415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/cs/code/note0/" class="md-nav__link">
+      <a href="../note0/" class="md-nav__link">
         Markdown 语法手册
       </a>
     </li>
@@ -2534,7 +2531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/3u/data/" class="md-nav__link">
+      <a href="../../../course/3u/data/" class="md-nav__link">
         数据科学的数学基础
       </a>
     </li>
@@ -2548,7 +2545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/3u/quan/" class="md-nav__link">
+      <a href="../../../course/3u/quan/" class="md-nav__link">
         量子信息与量子计算
       </a>
     </li>
@@ -2562,7 +2559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/3u/xigai/" class="md-nav__link">
+      <a href="../../../course/3u/xigai/" class="md-nav__link">
         习近平新时代中国特色社会主义思想概论
       </a>
     </li>
@@ -2576,7 +2573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/3u/eco/" class="md-nav__link">
+      <a href="../../../course/3u/eco/" class="md-nav__link">
         微观经济学
       </a>
     </li>
@@ -2590,7 +2587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/3u/na/" class="md-nav__link">
+      <a href="../../../course/3u/na/" class="md-nav__link">
         数值分析
       </a>
     </li>
@@ -2604,7 +2601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/3u/syms/" class="md-nav__link">
+      <a href="../../../course/3u/syms/" class="md-nav__link">
         商业模式
       </a>
     </li>
@@ -2618,7 +2615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/3u/pde22/" class="md-nav__link">
+      <a href="../../../course/3u/pde22/" class="md-nav__link">
         偏微分方程
       </a>
     </li>
@@ -2632,7 +2629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/3u/gll/" class="md-nav__link">
+      <a href="../../../course/3u/gll/" class="md-nav__link">
         概率论
       </a>
     </li>
@@ -2646,7 +2643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/3u/alg/" class="md-nav__link">
+      <a href="../../../course/3u/alg/" class="md-nav__link">
         抽象代数
       </a>
     </li>
@@ -2660,7 +2657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/3u/soft/" class="md-nav__link">
+      <a href="../../../course/3u/soft/" class="md-nav__link">
         数学软件
       </a>
     </li>
@@ -2726,7 +2723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2d/model/" class="md-nav__link">
+      <a href="../../../course/2d/model/" class="md-nav__link">
         数学建模
       </a>
     </li>
@@ -2740,7 +2737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2d/pde/" class="md-nav__link">
+      <a href="../../../course/2d/pde/" class="md-nav__link">
         偏微分方程
       </a>
     </li>
@@ -2754,7 +2751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2d/tdgt/" class="md-nav__link">
+      <a href="../../../course/2d/tdgt/" class="md-nav__link">
         团队沟通与领导力
       </a>
     </li>
@@ -2768,7 +2765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2d/szds/" class="md-nav__link">
+      <a href="../../../course/2d/szds/" class="md-nav__link">
         数值代数
       </a>
     </li>
@@ -2782,7 +2779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2d/mg/" class="md-nav__link">
+      <a href="../../../course/2d/mg/" class="md-nav__link">
         毛泽东思想与中国特色社会主义概论
       </a>
     </li>
@@ -2796,7 +2793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2d/ec/" class="md-nav__link">
+      <a href="../../../course/2d/ec/" class="md-nav__link">
         经济学
       </a>
     </li>
@@ -2810,7 +2807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2d/junli/" class="md-nav__link">
+      <a href="../../../course/2d/junli/" class="md-nav__link">
         军事理论
       </a>
     </li>
@@ -2824,7 +2821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2d/guanli/" class="md-nav__link">
+      <a href="../../../course/2d/guanli/" class="md-nav__link">
         管理学
       </a>
     </li>
@@ -2888,7 +2885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2u/ds/" class="md-nav__link">
+      <a href="../../../course/2u/ds/" class="md-nav__link">
         数据结构与算法
       </a>
     </li>
@@ -2902,7 +2899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2u/sf3/" class="md-nav__link">
+      <a href="../../../course/2u/sf3/" class="md-nav__link">
         数学分析 3
       </a>
     </li>
@@ -2916,7 +2913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2u/my/" class="md-nav__link">
+      <a href="../../../course/2u/my/" class="md-nav__link">
         马克思主义原理概论
       </a>
     </li>
@@ -2930,7 +2927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2u/ggjj/" class="md-nav__link">
+      <a href="../../../course/2u/ggjj/" class="md-nav__link">
         公共经济分析导论
       </a>
     </li>
@@ -2944,7 +2941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2u/dxwl2/" class="md-nav__link">
+      <a href="../../../course/2u/dxwl2/" class="md-nav__link">
         大学物理 2
       </a>
     </li>
@@ -2958,7 +2955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2u/dxwlsy/" class="md-nav__link">
+      <a href="../../../course/2u/dxwlsy/" class="md-nav__link">
         大学物理实验
       </a>
     </li>
@@ -2972,7 +2969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/2u/ode/" class="md-nav__link">
+      <a href="../../../course/2u/ode/" class="md-nav__link">
         常微分方程
       </a>
     </li>
@@ -3036,7 +3033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1d/wxqy/" class="md-nav__link">
+      <a href="../../../course/1d/wxqy/" class="md-nav__link">
         当代文学前沿问题研究
       </a>
     </li>
@@ -3050,7 +3047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1d/dxwl/" class="md-nav__link">
+      <a href="../../../course/1d/dxwl/" class="md-nav__link">
         大学物理 1
       </a>
     </li>
@@ -3064,7 +3061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1d/jds/" class="md-nav__link">
+      <a href="../../../course/1d/jds/" class="md-nav__link">
         中国近现代史纲要
       </a>
     </li>
@@ -3078,7 +3075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1d/xc/" class="md-nav__link">
+      <a href="../../../course/1d/xc/" class="md-nav__link">
         形势与政策
       </a>
     </li>
@@ -3092,7 +3089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1d/sf2/" class="md-nav__link">
+      <a href="../../../course/1d/sf2/" class="md-nav__link">
         数学分析 2
       </a>
     </li>
@@ -3106,7 +3103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1d/dxyy4/" class="md-nav__link">
+      <a href="../../../course/1d/dxyy4/" class="md-nav__link">
         大学英语 4
       </a>
     </li>
@@ -3120,7 +3117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1d/zhigui/" class="md-nav__link">
+      <a href="../../../course/1d/zhigui/" class="md-nav__link">
         职业生涯规划
       </a>
     </li>
@@ -3188,7 +3185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1u/dxyy3/" class="md-nav__link">
+      <a href="../../../course/1u/dxyy3/" class="md-nav__link">
         大学英语 3
       </a>
     </li>
@@ -3202,7 +3199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1u/sx/" class="md-nav__link">
+      <a href="../../../course/1u/sx/" class="md-nav__link">
         思想道德修养
       </a>
     </li>
@@ -3216,7 +3213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1u/sf/" class="md-nav__link">
+      <a href="../../../course/1u/sf/" class="md-nav__link">
         数学分析 1
       </a>
     </li>
@@ -3230,7 +3227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1u/skd/" class="md-nav__link">
+      <a href="../../../course/1u/skd/" class="md-nav__link">
         生命科学导论
       </a>
     </li>
@@ -3244,7 +3241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1u/skdsy/" class="md-nav__link">
+      <a href="../../../course/1u/skdsy/" class="md-nav__link">
         生命科学导论实验
       </a>
     </li>
@@ -3258,7 +3255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1u/mks/" class="md-nav__link">
+      <a href="../../../course/1u/mks/" class="md-nav__link">
         理解马克思
       </a>
     </li>
@@ -3272,7 +3269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1u/jjf/" class="md-nav__link">
+      <a href="../../../course/1u/jjf/" class="md-nav__link">
         经济法理论与实务
       </a>
     </li>
@@ -3286,7 +3283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1u/jihe/" class="md-nav__link">
+      <a href="../../../course/1u/jihe/" class="md-nav__link">
         几何学
       </a>
     </li>
@@ -3300,7 +3297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/course/1u/djj/" class="md-nav__link">
+      <a href="../../../course/1u/djj/" class="md-nav__link">
         计算机科学基础
       </a>
     </li>
@@ -3359,7 +3356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/product/test.md" class="md-nav__link">
+      <a href="../../../product/test.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -3413,7 +3410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/create/webs/" class="md-nav__link">
+      <a href="../../../create/webs/" class="md-nav__link">
         Slide 素材库
       </a>
     </li>
@@ -3427,7 +3424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../notes/create/fcpx/" class="md-nav__link">
+      <a href="../../../create/fcpx/" class="md-nav__link">
         Final Cut Pro 小记
       </a>
     </li>
@@ -3480,7 +3477,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../view/">📚目余</a>
+          <a href="../../../../view/">📚目余</a>
           
             <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
@@ -3538,7 +3535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../view/books/liucx/" class="md-nav__link">
+      <a href="../../../../view/books/liucx/" class="md-nav__link">
         刘慈欣短篇科幻小说合集
       </a>
     </li>
@@ -3552,7 +3549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../view/books/longnight/" class="md-nav__link">
+      <a href="../../../../view/books/longnight/" class="md-nav__link">
         长夜难明
       </a>
     </li>
@@ -3566,7 +3563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../view/books/qpdzsgr/" class="md-nav__link">
+      <a href="../../../../view/books/qpdzsgr/" class="md-nav__link">
         全频带阻塞干扰
       </a>
     </li>
@@ -3618,7 +3615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../view/music/lyric.md" class="md-nav__link">
+      <a href="../../../../view/music/lyric.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -3670,7 +3667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../view/video/surface/" class="md-nav__link">
+      <a href="../../../../view/video/surface/" class="md-nav__link">
         Surface Pro 2 评测
       </a>
     </li>
@@ -3699,6 +3696,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -3718,22 +3717,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1978-1992" class="md-nav__link">
-    1978-1992
+  <a href="#_1" class="md-nav__link">
+    学习概况
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1992-2008" class="md-nav__link">
-    1992-2008
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2008" class="md-nav__link">
-    2008至今
+  <a href="#_2" class="md-nav__link">
+    
   </a>
   
 </li>
@@ -3752,17 +3744,14 @@
                 
                   
   
+  
 
-  <nav class="md-tags" >
+
+  <nav class="md-tags" hidden>
     
       
       
-        <a href="../../../home/tags/#" class="md-tag">意识形态</a>
-      
-    
-      
-      
-        <a href="../../../home/tags/#" class="md-tag">思潮</a>
+        <a href="../../../../home/tags/#" class="md-tag">后端开发</a>
       
     
   </nav>
@@ -3771,89 +3760,33 @@
 
 
 
-<h1 id="_1">资本的复兴和脑力无产者的左转<a class="headerlink" href="#_1" title="跳转到该部分">&para;</a></h1>
-<blockquote>
-<p>@佐伊23</p>
-</blockquote>
-<p>​       2020年是一个特殊的年份，它是脑力无产者明显左转的一年，也是体力无产者明显感受到危机的第一年。</p>
-<p>自从1978年以来，中国资本的发展经历了三个大的阶段，与之相伴的是，资本家的地位和劳动者的意识也经历了三个阶段。</p>
-<h2 id="1978-1992">1978-1992<a class="headerlink" href="#1978-1992" title="跳转到该部分">&para;</a></h2>
-<p>这是中国资本发展的第一个阶段。在这个阶段，资本从无到有被召唤出来，并在全国范围建立了统一的商品市场、劳动力市场和金融体系。</p>
-<p>1978年之前，成为一个资本家去剥削工人不仅是可耻的，而且是非法的。改革开放之后，第一批资本家（最初还只是城乡个体户）就是在这样的社会环境中成长起来的。</p>
-<p>1981年，一个问题在党内引发激烈讨论，社会主义制度下出现的私人雇工算不算剥削。争论不休之下，最后给了一个似而非的结论，雇工不超过8人就不算剥削，超过8人就是剥削。但是资本的发展是迅猛的，8人的限制迅速就被打破。</p>
-<p>1983年1月，中央对超出8人的雇工提出“三不”原则：</p>
-<blockquote>
-<p>“不宜提倡，不要公开宣传，也不要急于取缔。”</p>
-</blockquote>
-<p>在这样暧昧不清的环境中，资本迅速发展，资本家作为一个阶级重新出现在华夏大地这片工农故土之上。</p>
-<p>资本家在发家致富的同时，并没有相应的社会地位。他们不能进人大、不能进政协、不能入党，他们甚至对自己剥削工人而积攒的家底能不能保存下来都心里没底，毕竟，在十年前我党还要没收资本家的财产。</p>
-<p>在城市中，工人阶级还有铁饭碗，而那些今天发家致富的资本家，昨天还只是返城没有工作的知情、游手好闲的二流子、以及其他形形色色被无产阶级看不上的人。对这些发了财的资本家，无产阶级在羡慕中又流露出鄙夷，“不就有两个臭钱吗，国家过两天就给你没收了。”</p>
-<p>在农村里，第一批农民工已经出现。社会主义时期的社队企业，在人民公社解体后改了个名字叫做“乡镇企业”，这些乡镇企业被承包给各种“能人”开始了资本化的发展。本地农民成了乡镇企业雇工主要的产业后备军，这些农民除了从事农业生产外，还在自己所在乡镇的企业做兼职工作，他们同时从事工业和农业，显著特征就是“离土不离乡”。</p>
-<p>国家到底会不会没收财产?是不是把资本家养肥了又宰掉?很多资本家自己心里都没底。为了给资本家安心，1987年，总设计师曾有一次讲话，他意味深长的说，“现在我们国内人们议论雇工问题，我和好多同志谈过，犯不着在这个问题上表现我们在‘动’，可以再看几年。”当然，为了减小阻力，总设计师又安慰那些还坚持传统的老干部说，“现在的雇工大致上只是小企业和农村已经承包的农民，雇工人数同全国一亿多职工相比，数目很小。从全局看，这只不过是小小的一点。要动也容易，但是一动就好像政策又在变了。动还是要动，因为我们不搞两极分化。但是，在什么时候动，用什么方法动，要研究。”然而，这一研究就是数十年。</p>
-<p>1988年，在资本发展了将近十年之后，在资本家已经成为了一个新兴的阶级之后，在农民工重新出现之后，在城市工人尚在梦中仍能分房的时候，在大学生还是天之骄子能够获得国家干部身份的时候，全国人大修宪了。私营经济终于获得了法律认可。</p>
-<p>这是两个时代转轨的衔接点，从计划到市场，从社会主义到资本体制，从劳动人民当家做主到资本家重回庙堂。</p>
-<p>在这个衔接点上，资本家除了钱更多一点之外，他还没有获得相应的地位。他不仅不能入人大政协，就连他的子女进入大学的机会也比不上工农子弟，当然，更比不上国家干部。下面这张图就是其他社会群体子女进入大学的几率与资本家群体的比值，1982年，城市工人子女上大学的几率是资本家的3.23倍，农民子女上大学的几率是资本家的2.13倍。1990年，城市工人工人子女上大学的几率是资本家的10.78倍，农民子女上大学的几率是资本家的6.22倍。　　</p>
-<p><img alt="图片" src="http://img.wyzxwk.com/p/2021/01/3271c3ad9a61c2d1bcb5d813c28de7fd.jpg" /></p>
-<p>而这一切，在1992年之后，彻底改变了。</p>
-<h2 id="1992-2008">1992-2008<a class="headerlink" href="#1992-2008" title="跳转到该部分">&para;</a></h2>
-<p>这是资本发展的第二个阶段。南巡拉开了这个阶段的帷幕，指明了资本发展的方向，终结了姓社姓资的讨论，为资本重新跃马扬鞭在华夏大地上纵横驰骋扫清了障碍。</p>
-<p>这个阶段有多个标志性事件，其中，1993年底夺去87个女工生命的致丽大火最让人悲痛不已。这把火宣告着资本对劳工的统治重新建立起来了，自此之后数十年间，劳工只能在资本的铁蹄下卑微地活着，或者卑微地死去。</p>
-<p>低廉的工价，极度宽松的招商环境，大量受过教育的工人，完善的建基设施，以及全行业的产业链，这一切，使得中国成了资本升值的天堂。资本快速的发展着。</p>
-<p>1992年之前的资本，除了少数红顶商人之外，多数就是个体户和农村“能人”。1992年之后，大量体制内人员下海，大量国企干部收购国企从管理层变为所有者。1997-1998的私企普查，干部下海由于掌握更多社会资源，纯利润是平均数的1.9倍。</p>
-<p>这个阶段，大量灰色交易和违法行为出现，据戴建中估计，1989到1998年间，私企偷税漏税超过2700亿元，大致占这些年间财政收入的5%。</p>
-<p>老板钱更多了，地位也更稳了。2001年七一讲话提到，私营企业主等人“通过诚实劳动和工作，通过合法经营，为发展社会主义社会的生产力和其他事业作出了贡献。他们与工人、农民、知识分子、干部和解放军指战员团结在一起，他们也是有中国特色社会主义事业的建设者”，如果这些人“承认党的纲领和章程、自觉为党的路线和纲领而奋斗、经过长期考验、符合党员条件”，则应该将他们“吸收到党内来”。从这一年开始，资本家得以加入共产党，剥削者在党的组织中也合法了。老板们不仅仅能够入党，还渗入各级人大、政协参政议政。</p>
-<p>越是大资本家，越是追求政治地位，积极入党，甚至本身就是党员经商。《全国工商联上规模民营企业调研分析报告》(2000~2014年)做过一次调查，基本情况如下表。　　</p>
-<p><img alt="图片" src="http://img.wyzxwk.com/p/2021/01/40519eb99b2ff6868c0fd71ce3d683fd.jpg" /></p>
-<blockquote>
-<p>1、规模以上私营企业的所有者界定为大资本家。</p>
-<p>2、在中小企业主中，按照国家统计局的相关标准，将工业营业额不超过3000万元和其他行业不超过1000万元的企业拥有者界定小资本家。</p>
-<p>3、其余为中型资本家。</p>
-</blockquote>
-<p>在城市中，免费分房和福利医疗都没了，国企改制终结了工人铁饭碗的梦。在国企工人没落的同时，新生代农民工成了无产阶级的主体，特别是在我国加入WTO之后，农民工数量更是突飞猛进。2003-2008年，全国外出农民工每年增长600万到800万人。这批人，不知福利分房为何物，不知免费医疗为何物，他们成长在改开的年代，工作在资本的工厂，从来都认为被剥削压迫是天经地义理所当然，这是一次重要的意义非凡的血液的替换，清洗掉了曾经的记忆，为资本进一步在意识形态上获得统治地位打下基础。</p>
-<p>在农村中，小农经济在短暂的复苏后开始出现问题，三农问题的焦虑成了上个世纪末集体的记忆。但是，农民问题在中国加入WTO后迅速让位，因为农村中大部分青壮年流入城市，农村以这样的方式逐步枯萎，农村问题以这样的方式渐渐淡出人们的视线。</p>
-<p>此时，资本家和工农子弟的差距终于拉开了。不论在财富上、地位上或者社会声望上。资本已经完全合法，没有人再讨论雇工几人才算剥削，剥削嘛，你不剥削，别人就剥削，剥削你是给你工作机会，你要感恩才是。2005年后，曾有人借国企管理层肆意MBO之际攻击资本家，揭露他们那些见不得人的老底，要清洗他们的原罪。但是主流舆论不理不睬，甚至有学者建议豁免所有资本家的原罪，因为如果要追究，大部分资本家都有罪。</p>
-<p>资本大踏步的前进，工农再次匍匐在地，就在资本与工农的中间，一个新兴的群体出现了。这个群体是随着中国城镇化、资本全球化以及新兴互联网行业的出现而壮大的，他们以专业技术人员和管理人员为主。他们从事着法律、会计、金融、管理以及各种各样的科研技术工作。他们中的一部分人，或者是由于在部门中占据管理职能，或者是掌握了较强的技术因此具有一定的不可替代性，或者是由于身处垄断行业，能在资本剥削劳动力的体制中，比普通劳动者拥有更好的工作环境、更大的组织生产的权力，因而也能获得更高的薪酬，这批人是新兴小资产阶级（教授、高中特级教师、部门经理、部分金融从业人员、大公司工程师、部分互联网从业人员等等）。他们中的另一批人，从事着低端的技术工作或底层的管理工作，拿些微薄的仅仅比体力无产者稍多的薪水，这些人是典型的脑力无产者（外包程序员、金融行业底层人员、部门办事员、中小学老师、公司技术员等等）。</p>
-<p>在资本快速发展的时候，新兴的小资产阶级在高声欢呼。他们诅咒那个计划的时代，他们和主流一起歌颂这个冉冉兴起的盛世，他们为资本的每一次前行激动不已，肥得流油的资本总能滴下几滴油喂饱他们不大的野心。</p>
-<p>脑力无产者仍有希望上升为新兴的小资产阶级，他们和新兴小资产阶级在同一间办公室办公，在同一个餐桌吃饭，有着类似的背景，聊着相同的话题。因此，他们也具有类似的意识形态。他们崇尚竞争，相信靠自己的努力能改变命运，他们喝着老板的鸡汤、看着成功学的视频、听着马云的演讲、畅想着美好的未来。</p>
-<p>与资本在精神上以及一定程度也在利益上结盟的新兴小资产阶级，以及被新兴小资产阶级小康般生活吸引的脑力无产者，构成了知乎等新媒体上最初的用户群体。这个群体当然也在新兴的知乎等媒体上，用符合资本要求的话语回答着、讨论着各种问题。</p>
-<h2 id="2008">2008至今<a class="headerlink" href="#2008" title="跳转到该部分">&para;</a></h2>
-<p>这是资本发展的第三个阶段，这是资本盛极而衰的阶段。</p>
-<p>在这个阶段的初期，资产阶级变得更强大了。中国资本依靠举国体制和凯恩斯主义实现弯道超车，一举成为全球第二大经济体。而中国的垄断资本更是一举超过英德日法，成为全球第二，世界500强的数量从2007年的30个，飙升至2015年的106个。　　</p>
-<p><img alt="图片" src="http://img.wyzxwk.com/p/2021/01/366a01b388ab5e8ba62a1645cc246d2b.jpg" /></p>
-<p>资本家除了更有钱之外，还更深地进入社会管理领域。我们看第九届(1998)和第十一届(2008)全国人大代表构成，资产阶级成了除国家机关工作人员之外最大的群体。他们是由房地产商、工商业巨头、互联网贵族以及各地富豪构成的，他们是人们口中的大老板、大富豪。他们仅占人口中的极少部分，但在全国人大代表中占比2成左右。至于表格中的专业人士群体，是由演艺界明星、金融大佬、知名运动员、律所合伙人等所谓精英构成的，他们多数人事实上也是资本家。　　</p>
-<p><img alt="图片" src="http://img.wyzxwk.com/p/2021/01/85ba3fdc6840b60764727ce1f4980df0.jpg" /></p>
-<p><center>九届人大构成</center></p>
-<p><img alt="图片" src="http://img.wyzxwk.com/p/2021/01/979f6118d436e9ddbcb2b0014c8c6e56.jpg" /></p>
-<p><center>十一届人大构成</center></p>
-<p>在这个阶段，农民作为一个阶级在快速没落。青壮年转移使得农村成了993861部队，即99重阳的老人，38妇女的女性，61儿童的小孩。当前农村中，纯务农或以务农为主，多曾经在外打工数年，由于年龄等原因无法继续打工才回乡务农。按《当代中国阶级阶层变动》系列报告所述，纯务农者，“他们中有67.91%的人曾是雇员或是工薪收入者，也就是打过工，最后才回归到农村务农，大部分是年纪大了回到农村务农。”小农作为一个群体必然在市场经济中消亡，这是难以避免的。</p>
-<p>在这个阶段，还有两个重要的矛盾在快速发展，这对中国产生了深刻的影响。</p>
-<p>其一，中国资本的快速发展使得国内市场越来越狭窄了，过剩资本不断对外输出，2012年之后的再一次过剩加速了资本的输出，从2014年起，中国成为了资本净输出国。而全世界的市场是有限的，中国输出的资本必然和英法美德意日等老牌帝国主义产生竞争，导致这些国家的垄断利润下滑，这是美国垄断资产阶级不愿意看到的。事实上，从2012年奥巴马亚太再平衡战略起，美国就明确了遏制中国资本的策略，这一方针在特朗普政府被公开化。</p>
-<p>其二，工人阶级自发的抗争越来越多，在抗争的推动下，他们实际工资有了一个快速增长的阶段。这个阶段大致是从2003-2015，其中2010年前后增长最快。这使得资本眼中的“成本”越来越高，低端产业的利润越来越低。</p>
-<p>资本主义的基本矛盾在上述两个矛盾的影响下发展得更快了，大规模的产能过剩使得中国GDP增长率从2013年开始断崖式下滑，经济进入了一个被称为“新常态”的时期。为了保住经济，我国分别在2009年和2014年进行了两次大规模的刺激政策，伴随着刺激政策的深化，房价终于上天。</p>
-<p>买了房的新兴小资产阶级仍然在欢呼着盛世，没有买房的小资产阶级以及广大的脑力无产者开始望房兴叹。伴随着利润的下滑，资本对他们的压榨似乎变得更重一些了，伴随着房价的上涨，资本带给他们的希望明显变得更为渺茫。</p>
-<p>2018年以来，内外部矛盾都更多了。吃饭的时候，那些明显不关心社会话题的人，也开始谈论社会问题，有些是因为彩礼引起的，有些是因为工资引起的，有些是因为房价引起的，有些是因为被优化引起的，所有的都是因为在资本的体制下生存的压力引起的。</p>
-<p>还是这么一群人，还是在知乎等新媒体上面，曾经，他们为资本的发展鼓与呼，现在，他们开始自发地咒骂着资本。</p>
-<p>而这群人有一个全世界任何地方都不具备的特点，他们是在历史唯物主义的教育中长大的。不论他们读书的时候是否认可“阶级”、“剥削”、“剩余价值”这类概念及其内涵，他们都曾被广泛地灌输这类意识。当资本高速发展可以些许惠及他们的时候，他们抛弃了这些概念，当资本不再能给他们带来希望而只会无情压榨他们的时候，这些概念在他们的脑海中回归了。他们开始用“资本家”称呼企业家，用“剥削”描述企业家，用“阶级”审视企业家。</p>
-<p>他们中的一部分人开始左转，在网上自发地宣传着曾经在课本上学得的知识，剥削，阶级，资本家，剩余价值。他们中的一少部分人甚至开始自己花时间学习着各种课本上不曾涉及的知识，毛选，马恩选集，列宁的书，以及那些被忽视或掩盖的历史。</p>
-<p>他们开始在网上论战，论战的对象是各种纯色或杂色的小粉红，各种精神或肉体的资本家，以及广大的在他们看来尚未觉醒的劳动者，当然，还有那些用马克思主义的词句包装起来的沙文主义者。</p>
-<p>2020年突如其来的疫情把这一切又放大了，压迫似乎又重了一点点，房价似乎还是那么高，工作似乎更加不稳定了，美好的生活显得似乎更加渺茫。</p>
-<p>而那些企业家在几十年的高速发展中培养出的傲慢和残忍，一次次刺中他们的心。“996”是福报，商业是公益，企业家还要给自己设立节日，企业家还要提案成立两年以内的企业不用遵守劳动法。</p>
-<p>这一切都促发了知乎群体在2020年对资本家态度的急剧转变。</p>
-<p>然而，这个群体毕竟只是劳动者中人数较少的一部分，广大的体力无产者还没有那么强的感受，他们本来工资就低，他们本来就不指望在大城市买房，他们本来就生活在底层，他们获取信息的渠道也更有限，他们抽象思考的能力也更差一些，他们似乎还没有多大变化。</p>
-<p>但是，体力无产阶级也在变化。工资赶不上物价，“2017年这个单间300块，今年这个单间550块”，“我下班还要打一份临工，哪有时间休息”。他们的抱怨也多起来了。不仅如此，经济下滑，很多工人回到老家，这些回到老家的工人会失去收入，经济危机在预演了。</p>
-<p>2020年是一个特殊的年份，它是脑力无产者明显左转的一年（转向批评资本主义），也是体力无产者明显感受到危机的第一年。</p>
-<p><strong>风暴远远还没来，但是脑力无产者的左转释放了一个明显的信号，天边已经聚起了几朵乌云，雷声也若隐若现，敏锐的人甚至能看到那划破夜空的几道微弱的闪电，历史的辩证法携着天边的风暴以不可抵挡的趋势向我们奔来，而极少数敏锐的青年已经张开双臂准备拥抱它了。</strong></p>
+<h1 id="c">C++ 基础<a class="headerlink" href="#c" title="跳转到该部分">&para;</a></h1>
+<div class="badges">
+<span class="badge badge1">后端开发</span>
+</div>
+
+<h2 id="_1">学习概况<a class="headerlink" href="#_1" title="跳转到该部分">&para;</a></h2>
+<div class="admonition abstract">
+<p>正在施工</p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">资料</p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1dE41167hJ/?spm_id_from=333.337.search-card.all.click&amp;vd_source=e81e93bc6892fd0d7e19b265d26a2b3a">翁恺 C++</a></li>
+</ul>
+</div>
+<h2 id="_2"><a class="headerlink" href="#_2" title="跳转到该部分">&para;</a></h2>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-01-25</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-01-27</span>
       
         <br>
         创建日期:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-01-20</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-01-27</span>
       
     
   </small>
@@ -3862,6 +3795,8 @@
 
   
 
+
+  
 
 
   <form class="md-feedback" name="feedback" hidden>
@@ -3945,10 +3880,12 @@
   
     
       
+        
+      
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../xjp-6/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 习近平时代：什么样的人可以进入中共高层" rel="prev">
+          <a href="../../ai/cs229/" class="md-footer__link md-footer__link--prev" aria-label="上一页: CS229: 机器学习" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -3957,20 +3894,20 @@
                 <span class="md-footer__direction">
                   上一页
                 </span>
-                习近平时代：什么样的人可以进入中共高层
+                CS229: 机器学习
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../notes/" class="md-footer__link md-footer__link--next" aria-label="下一页: 邻域" rel="next">
+          <a href="../html-css/" class="md-footer__link md-footer__link--next" aria-label="下一页: CSS 语法小记" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   下一页
                 </span>
-                邻域
+                CSS 语法小记
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -4070,12 +4007,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "navigation.footer", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "navigation.footer", "search.highlight", "search.share"], "search": "../../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.51d95adb.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
