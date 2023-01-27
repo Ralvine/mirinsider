@@ -1,3 +1,8 @@
+/************
+    File: extra.css
+    Author: Ralvine
+************/
+
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap');
@@ -10,70 +15,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;700&display=swap');
 
-
-.md-ellipsis, h1, .headerlink{
+/* 网站标题 */
+.md-ellipsis {
     font-size: larger;
     font-family: 'Sofia', 'Ma Shan Zheng', 'ZCOOL XiaoWei', serif;
     font-weight: lighter;
 }
 
+/* 文章标题 */
+h1 {
+    font-size: larger;
+    font-family: 'Sofia', 'Ma Shan Zheng', 'ZCOOL XiaoWei', serif;
+    font-weight: lighter;
+}
+[data-md-color-scheme="default"] h1 {
+    color: #672818;
+}
+[data-md-color-scheme="slate"] h1 {
+    color: #dcdcdc;
+}
+
+/* 各级标题宽度 */
 .md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5 {
     font-weight: 600;
 }
 
-body, input {
+/* 标题字体 */
+body {
     font-family: 'Lexend', 'Noto Sans SC', 'Source Code Pro', 'Noto Serif SC', sans-serif, -apple-system, Helvetica, Arial, sans-serif;
-    color: #191919;
+}
+[data-md-color-scheme="default"] body {
+    color: #672818;
+}
+[data-md-color-scheme="slate"] body {
+    color: #dcdcdc;
 }
 
-center, p, li {
+/* 居中文字 */
+center {
     font-size: medium;
 }
 
+/* 引用 */
+p {
+    font-size: medium;
+}
+
+/* 列表 */
 li {
+    font-size: medium;
     line-height: 1.2;
 }
 
+/* 边栏 */
 .md-nav__link {
     font-size: small;
 }
 
+
+/* 告示板: 常规和带标题的 */
 .md-typeset .admonition, .md-typeset details {
     border: none;
-} 
-
-.md-tabs {
-    background-color: var(--md-primary-fg-color--light);
+    box-shadow: var(--md-shadow-z2);
+}
+.md-typeset details:not([open]) {
+    box-shadow: var(--md-shadow-z2);
+    padding-bottom: 0;
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition, .md-typeset details {
+    color: #ffffff
 }
 
+/* 导航栏及其链接 */
+[data-md-color-scheme="default"] .md-tabs {
+    background-color: #C0815F;
+}
+[data-md-color-scheme="slate"] .md-tabs {
+    background-color: #2b2b2b;
+}
 .md-tabs__link {
     margin-top: .8rem;
     opacity: .4;
     font-family: var(--md-text-font-family);
 }
-
 .md-tabs__link--active, .md-tabs__link:is(:focus,:hover) {
     color: inherit;
     opacity: 1;
 }
 
-.md-typeset details:not([open]) {
-    box-shadow: var(--md-shadow-z2);
-    padding-bottom: 0;
-}
-.md-typeset .admonition, .md-typeset details {
-    box-shadow: var(--md-shadow-z2);
-}
-
+/* 媒体 */
 .md-typeset img, .md-typeset video {
     box-shadow: var(--md-shadow-z1);
     border-radius: 5px;
 }
 
+/* 文内标签 */
 .badges {
     margin-top: -2em;
 }
-
 .badge {
     display: inline-block;
     padding: 0.2em 0.4em;
@@ -87,43 +126,50 @@ li {
 }
 .badge1 {
     background-color: #FF862F;
-    color: #161616;
 }
-.badge2, .general-badge {
+.badge2 {
     background-color: #29ABCA;
-    color: #161616;
 }
-.badge3, .cross-badge {
+.badge3 {
     background-color: #FC6255;
-    color: #161616;
 }
 [data-md-color-scheme="default"] .badge1,
 [data-md-color-scheme="default"] .badge2,
 [data-md-color-scheme="default"] .badge3 {
     color: #FFFFFF;
 }
+[data-md-color-scheme="slate"] .badge1,
+[data-md-color-scheme="slate"] .badge2,
+[data-md-color-scheme="slate"] .badge3 {
+    color: #FFFFFF;
+}
+
+/* 图片放大 */
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.zoom {
+    transition: transform ease-in-out 0.5s;
+    cursor: zoom-in;
+}
+.image-zoom-large {
+    transform: scale(1.9);
+    cursor: zoom-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 100;
+    position: relative;
+}
 
 :root, [data-md-color-scheme=default] {
-    --md-default-fg-color: rgba(72, 52, 52, .78);
-    --md-default-fg-color--light: rgba(72, 52, 52,.54);
-    --md-default-fg-color--lighter: rgba(72, 52, 52,.32);
-    --md-default-fg-color--lightest: rgba(72, 52, 52,.27);
-    --md-default-bg-color: #fffaf5;
-    --md-default-bg-color--light: hsla(0,0%,100%,.7);
-    --md-default-bg-color--lighter: hsla(0,0%,100%,.3);
-    --md-default-bg-color--lightest: hsla(0,0%,100%,.12);
-    --md-primary-fg-color: #672818;
-    --md-primary-fg-color--light: #C0815F;
-    --md-primary-fg-color--dark: #806b65;
-    --md-primary-bg-color: #FDF6EC;
-    --md-primary-bg-color--light: hsla(0,0%,100%,.7);
+    /* 文本颜色 */
+    --md-typeset-color: rgba(72, 52, 52, .78);
+    --md-admonition-fg-color: rgba(72, 52, 52, .78);
+    --md-code-fg-color: #66806A;
     --md-accent-fg-color: #809A6F;
     --md-accent-fg-color--light: #672818;
-    --md-accent-fg-color--transparent: rgba(82,108,254,.1);
-    --md-accent-bg-color: #fff;
-    --md-accent-bg-color--light: hsla(0,0%,100%,.7);
-    --md-code-fg-color: #66806A;
-    --md-code-bg-color: #FFF3E4;
+    --md-primary-fg-color: #672818;
+    --md-primary-fg-color--dark: #806b65;
+    --md-typeset-a-color: #672818;
     --md-code-hl-color: rgba(255,255,0,.5);
     --md-code-hl-number-color: #d52a2a;
     --md-code-hl-special-color: #db1457;
@@ -131,29 +177,89 @@ li {
     --md-code-hl-constant-color: #6e59d9;
     --md-code-hl-keyword-color: #3f6ec6;
     --md-code-hl-string-color: #1c7d4d;
-    --md-code-hl-name-color: var(--md-code-fg-color);
-    --md-code-hl-operator-color: var(--md-default-fg-color--light);
-    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
-    --md-code-hl-comment-color: var(--md-default-fg-color--light);
-    --md-code-hl-generic-color: var(--md-default-fg-color--light);
-    --md-code-hl-variable-color: var(--md-default-fg-color--light);
-    --md-typeset-color: var(--md-default-fg-color);
-    --md-typeset-a-color: var(--md-accent-fg-color--light);
+    --md-code-hl-name-color: #66806A;
+    --md-code-hl-operator-color: rgba(72, 52, 52,.54);
+    --md-code-hl-punctuation-color: rgba(72, 52, 52,.54);
+    --md-code-hl-comment-color: rgba(72, 52, 52,.54);
+    --md-code-hl-generic-color: rgba(72, 52, 52,.54);
+    --md-code-hl-variable-color: rgba(72, 52, 52,.54);
+    --md-accent-fg-color--transparent: rgba(82,108,254,.1);
     --md-typeset-mark-color: rgba(255, 179, 0, 0.5);
     --md-typeset-del-color: rgba(245,80,61,.15);
     --md-typeset-ins-color: rgba(11,213,112,.15);
     --md-typeset-kbd-color: #fafafa;
     --md-typeset-kbd-accent-color: #fff;
     --md-typeset-kbd-border-color: #b8b8b8;
-    --md-typeset-table-color: rgba(0,0,0,.12);
-    --md-admonition-fg-color: var(--md-default-fg-color);
-    --md-admonition-bg-color: #fff5ee;
     --md-footer-fg-color: #fff;
     --md-footer-fg-color--light: hsla(0,0%,100%,.7);
     --md-footer-fg-color--lighter: hsla(0,0%,100%,.3);
-    --md-footer-bg-color: rgba(0,0,0,.87);
-    --md-footer-bg-color--dark: rgba(0,0,0,.32);
     --md-shadow-z1: 1px 1px 3px #fff5ee,1px 1px 5px #e1d0c5;
     --md-shadow-z2: 1px 1px 3px #fff5ee,2px 2px 7px #cebeb3;
     --md-shadow-z3: 1px 1px 3px #fff5ee,2px 2px 9px #cebeb3;
+    /* 背景色 */
+    --md-default-bg-color: #fffaf5;
+    --md-default-bg-color--light: hsla(0,0%,100%,.7);
+    --md-default-bg-color--lighter: hsla(0,0%,100%,.3);
+    --md-default-bg-color--lightest: hsla(0,0%,100%,.12);
+    --md-primary-bg-color: #FDF6EC;
+    --md-primary-bg-color--light: hsla(0,0%,100%,.7);
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: hsla(0,0%,100%,.7);
+    --md-typeset-table-color: rgba(255, 255, 255, 0.12);
+    --md-admonition-bg-color: #fff5ee57;
+    --md-code-bg-color: #FFF3E4;
+    --md-footer-bg-color: rgba(0,0,0,.87);
+    --md-footer-bg-color--dark: rgba(0,0,0,.32);
+}
+
+:root, [data-md-color-scheme=slate] {
+    /* 文本颜色 */
+    --md-typeset-color: rgba(255, 255, 255, 0.668);
+    --md-admonition-fg-color: rgba(72, 52, 52, .78);
+    --md-code-fg-color: #66806A;
+    --md-accent-fg-color: #d4ffb6;
+    --md-accent-fg-color--light: #ffdfd7;
+    --md-primary-fg-color: #000000;
+    --md-primary-fg-color--dark: #ffece7;
+    --md-typeset-a-color: #ffb8a6;
+    --md-code-hl-color: rgba(255,255,0,.5);
+    --md-code-hl-number-color: #d52a2a;
+    --md-code-hl-special-color: #ffb2cc;
+    --md-code-hl-function-color: #a846b9;
+    --md-code-hl-constant-color: #6e59d9;
+    --md-code-hl-keyword-color: #3f6ec6;
+    --md-code-hl-string-color: #1c7d4d;
+    --md-code-hl-name-color: #66806A;
+    --md-code-hl-operator-color: rgba(72, 52, 52,.54);
+    --md-code-hl-punctuation-color: rgba(72, 52, 52,.54);
+    --md-code-hl-comment-color: rgba(72, 52, 52,.54);
+    --md-code-hl-generic-color: rgba(72, 52, 52,.54);
+    --md-code-hl-variable-color: rgba(72, 52, 52,.54);
+    --md-accent-fg-color--transparent: rgba(82,108,254,.1);
+    --md-typeset-mark-color: rgba(255, 179, 0, 0.5);
+    --md-typeset-del-color: rgba(252, 252, 252, 0.982);
+    --md-typeset-ins-color: rgba(255, 255, 255, 0.97);
+    --md-typeset-kbd-color: #ffffff;
+    --md-typeset-kbd-accent-color: #fff;
+    --md-typeset-kbd-border-color: #b8b8b8;
+    --md-footer-fg-color: #fff;
+    --md-footer-fg-color--light: hsla(0,0%,100%,.7);
+    --md-footer-fg-color--lighter: hsla(0,0%,100%,.3);
+    --md-shadow-z1: 1px 1px 3px #3d3d3d,1px 1px 5px #1e1e1e;
+    --md-shadow-z2: 1px 1px 3px #3d3d3d,2px 2px 7px #1e1e1e;
+    --md-shadow-z3: 1px 1px 3px #3d3d3d,2px 2px 9px #1e1e1e;
+    /* 背景色 */
+    --md-default-bg-color: #000000;
+    --md-default-bg-color--light: hsla(0,0%,100%,.7);
+    --md-default-bg-color--lighter: hsla(0,0%,100%,.3);
+    --md-default-bg-color--lightest: hsla(0,0%,100%,.12);
+    --md-primary-bg-color: #FDF6EC;
+    --md-primary-bg-color--light: hsla(0,0%,100%,.7);
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: hsla(0,0%,100%,.7);
+    --md-typeset-table-color: rgba(0, 0, 0, 0.285);
+    --md-admonition-bg-color: #202020;
+    --md-code-bg-color: #FFF3E4;
+    --md-footer-bg-color: rgba(0,0,0,.87);
+    --md-footer-bg-color--dark: rgba(0,0,0,.32);
 }
