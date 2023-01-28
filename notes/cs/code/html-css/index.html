@@ -10,7 +10,7 @@
 <link href="../docker/" rel="next"/>
 <link href="../../../../images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.0.5" name="generator"/>
-<title>CSS 语法小记 - MirInsider 镜幕</title>
+<title>HTML~CSS 基础 - MirInsider 镜幕</title>
 <link href="../../../../assets/stylesheets/main.558e4712.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -38,7 +38,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#css">
+<a class="md-skip" href="#htmlcss">
           跳转至
         </a>
 </div>
@@ -62,7 +62,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              CSS 语法小记
+              HTML~CSS 基础
             
           </span>
 </div>
@@ -839,11 +839,11 @@
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          CSS 语法小记
+          HTML~CSS 基础
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        CSS 语法小记
+        HTML~CSS 基础
       </a>
 <nav aria-label="目录" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -852,14 +852,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-    层叠样式表
+<a class="md-nav__link" href="#css">
+    CSS
+  </a>
+<nav aria-label="CSS" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#html">
+    与 HTML 的关系
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#-">
-    - 内容与结构分离
+<a class="md-nav__link" href="#_1">
+    基本语法
   </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#html-markdown">
@@ -1330,14 +1339,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-    层叠样式表
+<a class="md-nav__link" href="#css">
+    CSS
+  </a>
+<nav aria-label="CSS" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#html">
+    与 HTML 的关系
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#-">
-    - 内容与结构分离
+<a class="md-nav__link" href="#_1">
+    基本语法
   </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#html-markdown">
@@ -1354,12 +1372,79 @@
 <nav class="md-tags" hidden="">
 <a class="md-tag" href="../../../../home/tags/#">前端开发</a>
 </nav>
-<h1 id="css">CSS 语法小记<a class="headerlink" href="#css" title="跳转到该部分">¶</a></h1>
+<h1 id="htmlcss">HTML~CSS 基础<a class="headerlink" href="#htmlcss" title="跳转到该部分">¶</a></h1>
 <div class="badges">
 <span class="badge badge1">前端开发</span>
 </div>
-<h2 id="_1">层叠样式表<a class="headerlink" href="#_1" title="跳转到该部分">¶</a></h2>
-<h2 id="-">- 内容与结构分离<a class="headerlink" href="#-" title="跳转到该部分">¶</a></h2>
+<h2 id="css">CSS<a class="headerlink" href="#css" title="跳转到该部分">¶</a></h2>
+<h3 id="html">与 HTML 的关系<a class="headerlink" href="#html" title="跳转到该部分">¶</a></h3>
+<ul>
+<li>内容与结构的分离</li>
+<li>在 HTML 上嵌入层叠样式表</li>
+<li>外部引用 .css</li>
+<li>内部/局部使用<code>&lt;style&gt;</code>, <code>&lt;p style=""&gt;</code></li>
+</ul>
+<h3 id="_1">基本语法<a class="headerlink" href="#_1" title="跳转到该部分">¶</a></h3>
+<ul>
+<li>属性内分隔符<code>,</code></li>
+<li>属性间分隔符<code>;</code></li>
+<li>
+<p>允许叠加属性符 <code>ex: top right</code></p>
+</li>
+<li>
+<p><code>background</code><strong>背景</strong></p>
+</li>
+</ul>
+<p><code>-color</code> 背景色</p>
+<p><code>-image: url(pic.file)</code> 背景图片</p>
+<p><code>-repeat: repeat/no-repeat</code> 重复性</p>
+<p><code>-position: center/right/top/100px 100px</code> 位置</p>
+<p><code>-attchment: scroll/fixed</code> 固定性</p>
+<ul>
+<li>
+<p><strong>文本段落</strong></p>
+</li>
+<li>
+<p>格式</p>
+<p><code>text-indent: -2em/10%/2in/2cm</code> 首行缩进</p>
+<p><code>padding: 2em</code> 悬挂缩进 即非首行的缩进</p>
+<p><code>line-height: normal/1.5</code> 行距 倍数</p>
+<p><code>text-align: left/right/center/justify</code> 对齐 (justify: 两端对齐)</p>
+<p><code>word-spacing: 10px</code> 空格大小</p>
+<p><code>letter-spacing: 10px</code> 字符间距</p>
+<p><code>text-transform: uppercase/lowcase/capitalize</code> 变形: 全大写/小写/首字母大写</p>
+<p><code>text-decoration: underline/overline/linethrough</code> 文本装饰</p>
+<p><code>white-space: normal/pre/wrap/no-wrap/pre-line</code> 空白符样式</p>
+<p><code>direction: ltr/rtl</code> 方向</p>
+</li>
+<li>
+<p><strong>字体</strong></p>
+<p><code>font-family: serif/sans-serif/nomospace</code></p>
+<p><code>font-style: italic/obique</code> 斜体/计算斜体</p>
+<p><code>font-variant: small-caps</code> 大写字母缩小</p>
+<p><code>font-weight: 400/bold</code> 字重</p>
+<p><code>font-size: 0.5em/10px</code></p>
+<p><code>text-shadow: 3px 5px 5px rgba(r,g,b,a)</code> 阴影: x, y, z 轴延伸值</p>
+<p><code>outline-color: redl; outline-style: solid/double; outline-width: 1</code> 轮廓</p>
+</li>
+<li>
+<p><strong>列表</strong></p>
+<p><code>&lt;ul style="list-style[keyword]: [keyword]"&gt;</code></p>
+<p><code>-type: disc/circle/square</code></p>
+<p><code>-position:</code></p>
+</li>
+<li>
+<p>表格</p>
+</li>
+<li></li>
+<li>
+<p>颜色</p>
+</li>
+</ul>
+<p><code>transparent</code> 关键字 (透明)</p>
+<p><code>#ffffff</code> 十六进制</p>
+<p><code>rgb(255,255,0)</code> 十进制 (0~255)</p>
+<p><code>rgba(r,g,b,a)</code> a=alpha 透明度 (0~1)</p>
 <h2 id="html-markdown">HTML-MarkDown 对照表<a class="headerlink" href="#html-markdown" title="跳转到该部分">¶</a></h2>
 <table>
 <thead>
