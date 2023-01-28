@@ -25,7 +25,7 @@
 /* 文章标题 */
 h1, .headerlink {
     font-size: larger;
-    font-family: 'Sofia', 'Ma Shan Zheng', 'ZCOOL XiaoWei', serif;
+    font-family: 'Lexend', 'Noto Sans SC', 'Source Code Pro', 'Noto Serif SC', sans-serif, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: lighter;
 }
 [data-md-color-scheme="default"] h1 {
