@@ -72,21 +72,29 @@ li {
     font-size: small;
 }
 
+/* 表格 */
+table {
+    margin: auto;
+}
+
+[data-md-color-scheme="default"] {
+    @extend %root;
+  }
+
 /* 告示板: 常规和带标题的 */
 .md-typeset .admonition, .md-typeset details {
     border: none;
     box-shadow: var(--md-shadow-z2);
+    color: var(--md-admonition-fg-color);
 }
 .md-typeset details:not([open]) {
     box-shadow: var(--md-shadow-z2);
     padding-bottom: 0;
 }
-[data-md-color-scheme="default"] .md-typeset .admonition, .md-typeset details {
-    color: #672818
+.md-typeset details:not([open]) {
+    color: var(--md-admonition-fg-color);
 }
-[data-md-color-scheme="slate"] .md-typeset .admonition, .md-typeset details {
-    color: #ffffff
-}
+
 
 /* 导航栏及其链接 */
 [data-md-color-scheme="default"] .md-tabs {
@@ -148,6 +156,7 @@ li {
 
 :root, [data-md-color-scheme=default] {
     /* 文本颜色 */
+    --md-default-fg-color:  rgba(72, 52, 52, .78);
     --md-typeset-color: rgba(72, 52, 52, .78);
     --md-admonition-fg-color: rgba(72, 52, 52, .78);
     --md-code-fg-color: #66806A;
@@ -173,9 +182,6 @@ li {
     --md-typeset-mark-color: rgba(255, 179, 0, 0.5);
     --md-typeset-del-color: rgba(245,80,61,.15);
     --md-typeset-ins-color: rgba(11,213,112,.15);
-    --md-typeset-kbd-color: #fafafa;
-    --md-typeset-kbd-accent-color: #fff;
-    --md-typeset-kbd-border-color: #b8b8b8;
     --md-footer-fg-color: #fff;
     --md-footer-fg-color--light: hsla(0,0%,100%,.7);
     --md-footer-fg-color--lighter: hsla(0,0%,100%,.3);
@@ -200,8 +206,9 @@ li {
 
 :root, [data-md-color-scheme=slate] {
     /* 文本颜色 */
+    --md-default-fg-color:  rgba(255, 255, 255, 0.78);
     --md-typeset-color: rgba(255, 255, 255, 0.668);
-    --md-admonition-fg-color: rgba(72, 52, 52, .78);
+    --md-admonition-fg-color: rgba(255, 255, 255, 0.78);
     --md-code-fg-color: #66806A;
     --md-accent-fg-color: #d4ffb6;
     --md-accent-fg-color--light: #ffdfd7;
@@ -209,25 +216,22 @@ li {
     --md-primary-fg-color--dark: #ffece7;
     --md-typeset-a-color: #ffb8a6;
     --md-code-hl-color: rgba(255,255,0,.5);
-    --md-code-hl-number-color: #d52a2a;
+    --md-code-hl-number-color: #f6a5a5;
     --md-code-hl-special-color: #ffb2cc;
-    --md-code-hl-function-color: #a846b9;
-    --md-code-hl-constant-color: #6e59d9;
-    --md-code-hl-keyword-color: #3f6ec6;
-    --md-code-hl-string-color: #1c7d4d;
-    --md-code-hl-name-color: #66806A;
-    --md-code-hl-operator-color: rgba(72, 52, 52,.54);
-    --md-code-hl-punctuation-color: rgba(72, 52, 52,.54);
-    --md-code-hl-comment-color: rgba(72, 52, 52,.54);
-    --md-code-hl-generic-color: rgba(72, 52, 52,.54);
-    --md-code-hl-variable-color: rgba(72, 52, 52,.54);
+    --md-code-hl-function-color: #e2b0eb;
+    --md-code-hl-constant-color: #dedede;
+    --md-code-hl-keyword-color: #e0e0e0;
+    --md-code-hl-string-color: #21e080;
+    --md-code-hl-name-color: #08a820;
+    --md-code-hl-operator-color: rgba(224, 216, 216, 0.712);
+    --md-code-hl-punctuation-color: rgba(248, 172, 172, 0.54);
+    --md-code-hl-comment-color: rgba(255, 0, 0, 0.876);
+    --md-code-hl-generic-color: rgb(255, 98, 98);
+    --md-code-hl-variable-color: rgba(197, 255, 62, 0.969);
     --md-accent-fg-color--transparent: rgba(82,108,254,.1);
     --md-typeset-mark-color: rgba(255, 179, 0, 0.5);
     --md-typeset-del-color: rgba(252, 252, 252, 0.982);
     --md-typeset-ins-color: rgba(255, 255, 255, 0.97);
-    --md-typeset-kbd-color: #ffffff;
-    --md-typeset-kbd-accent-color: #fff;
-    --md-typeset-kbd-border-color: #b8b8b8;
     --md-footer-fg-color: #fff;
     --md-footer-fg-color--light: hsla(0,0%,100%,.7);
     --md-footer-fg-color--lighter: hsla(0,0%,100%,.3);
@@ -245,7 +249,7 @@ li {
     --md-accent-bg-color--light: hsla(0,0%,100%,.7);
     --md-typeset-table-color: rgba(0, 0, 0, 0.285);
     --md-admonition-bg-color: #202020;
-    --md-code-bg-color: #FFF3E4;
+    --md-code-bg-color: #2f2f2f;
     --md-footer-bg-color: rgba(0,0,0,.87);
     --md-footer-bg-color--dark: rgba(0,0,0,.32);
 }
