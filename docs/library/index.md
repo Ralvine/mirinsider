@@ -6,10 +6,10 @@ hide:
 # 镜观
 
 !!! note ""
-    <center><b>评论</b>
+    <center><b>评论</b></center>
     
-    <b>报道</b>
+    <center><b>报道</b></center>
     
-    <b>文献</b>
+    <center><b>文献</b></center>
     
-     </center>
+    

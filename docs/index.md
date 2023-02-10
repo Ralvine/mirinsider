@@ -2,14 +2,9 @@
 hide:
   - feedback
 ---
-# 镜幕
+# MirInsider
 
-![这是一张图片](./images/wallhaven-zyxvqy.jpg "MirInsider")
 
-<figure markdown>
-  ![Image title](./images/wallhaven-zyxvqy.jpg){ width="300" }
-  <figcaption>Image caption</figcaption>
-</figure>
 
 !!! note ""
     <center><b>胶卷</b>

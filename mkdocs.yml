@@ -1,4 +1,4 @@
-site_name: MirInsider 镜幕
+site_name: MirInsider
 copyright: Copyright &copy; 2021-2022 Ralvine
 site_url: https://ralvine.github.com/mirinsider/
 theme:
@@ -6,8 +6,8 @@ theme:
     logo: material/salesforce
   name: material
   custom_dir: overrides
-  logo: images/logo.png # logo
-  favicon: images/favicon.png
+  logo: https://s1.ax1x.com/2023/02/09/pSWiXlR.png
+  favicon: https://s1.ax1x.com/2023/02/09/pSWiXlR.png
   features:
     - navigation.instant
     - navigation.tracking
@@ -21,11 +21,13 @@ theme:
     - search.share
   language: zh
   palette: 
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       toggle:
         icon: material/weather-sunny
         name: 切换夜间模式
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       toggle:
         icon: material/weather-night
         name: 切换日间模式
@@ -34,7 +36,7 @@ theme:
       code: JetBrains Mono
 markdown_extensions:
   - toc:
-      permalink: true
+      permalink: 🏷
       permalink_title: 跳转到该部分
   - meta
   - pymdownx.tabbed:
@@ -118,11 +120,35 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
-  - "📍客廊":
+  - "🖼️":
+    - memory/1.md
+    - memory/2.md
+    - memory/3.md
+    - memory/4.md
+    - memory/5.md
+    - memory/6.md
+    - memory/7.md
+    - memory/8.md
+    - memory/9.md
+    - memory/10.md
+    - memory/11.md
+    - memory/12.md
+    - memory/13.md
+    - memory/14.md
+    - memory/15.md
+    - memory/16.md
+    - memory/17.md
+    - memory/18.md
+    - memory/19.md
+    - memory/20.md
+    - memory/21.md
+  - "✉️":
+    - https://ralvine.github.io/luvletter/
+  - "📍":
     - index.md
     - "👨简介": home/brief.md
     - "🏷️标签": home/tags.md
-  - "🖋️胶卷": 
+  - "🖋️": 
     - memo/index.md
     - "旅行":
       - memo/travel/index.md
@@ -161,7 +187,7 @@ nav:
         - memo/team/itp/test.md
       - "ZJUMSC":
         - memo/team/msc/test.md
-  - "📁镜观": 
+  - "📁": 
     - library/index.md
     - "评论":
       - library/review/news-1.md
@@ -206,7 +232,7 @@ nav:
       - library/files/xjp-5.md
       - library/files/xjp-6.md
       - library/files/zy23-1.md
-  - "🗒邻域": 
+  - "🗒": 
     - notes/index.md
     - "计算机科学":
       - notes/cs/index.md
@@ -272,7 +298,7 @@ nav:
     - "数字创作":
       - notes/create/webs.md
       - notes/create/fcpx.md
-  - "📚目余": 
+  - "📚": 
     - view/index.md
     - "书籍":
       - view/books/liucx.md
@@ -281,4 +307,11 @@ nav:
     - "音乐":
       - view/music/lyric.md
     - "视频":
-      - view/video/surface.md
+      - "科技评测":
+        - view/video/tech/surface.md
+      - "社哲心理":
+        - view/video/psy/love.md
+        - view/video/psy/relate.md
+      - "书影溯析":
+        - view/video/eyes/jjnz.md
+        - view/video/eyes/mysx.md
