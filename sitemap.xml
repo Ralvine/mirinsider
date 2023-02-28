@@ -346,12 +346,37 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/code/electron/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/code/flutter/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ralvine.github.com/mirinsider/notes/code/html-css/</loc>
          <lastmod>2023-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/code/latex/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ralvine.github.com/mirinsider/notes/code/note0/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/code/swiftui/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ralvine.github.com/mirinsider/notes/code/vue/</loc>
          <lastmod>2023-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
