@@ -1,26 +1,48 @@
 ---
 hide:
   - feedback
+nocomment: true
 ---
 # MirInsider
 
 
-
 !!! note ""
-    <center><b>胶卷</b>
-     </center>
-
-!!! note ""
-    <center><b>镜观</b>
-
-     </center>
-
-!!! note ""
-    <center><b>邻域</b>
+    <center><b>项目胶卷</b></center>
     
-     </center>
+    <b>收录项目与实践经历，包括但不限于</b>
+    
+    - 旅行
+    - 公益实践
+    - 科竞训练
+    - 学工社团
+    - 实习
 
 !!! note ""
-    <center><b>目余</b>
+    <center><b>镜面景观</b></center>
     
-     </center>
+    <b>收录观点文献，包括但不限于</b>
+    
+    - 视点评论
+    - 新闻报道
+    - 学术文献
+
+!!! note ""
+    <center><b>学习邻域</b></center>
+    
+    <b>收录学习笔记，包括但不限于</b>
+    
+    - 浙江大学本科生课程
+    - 数据与信息科学
+    - 人工智能与机器学习
+    - 全栈开发
+    - 摄影与影像创作
+    - 编曲
+
+!!! note ""
+    <center><b>目余仓库</b></center>
+    
+    <b>收录已阅书影音，包括但不限于</b>
+    
+    - 书籍
+    - 电影与剧集
+    - 视频收藏夹

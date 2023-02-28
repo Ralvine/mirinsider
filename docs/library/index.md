@@ -1,15 +1,16 @@
 ---
 hide:
   - feedback
+nocomment: true
 ---
 
-# 镜观
+# 镜面景观
 
 !!! note ""
-    <center><b>评论</b></center>
+    <center><b>镜面景观</b></center>
     
-    <center><b>报道</b></center>
+    <b>收录观点文献，包括但不限于</b>
     
-    <center><b>文献</b></center>
-    
-    
+    - 视点评论
+    - 新闻报道
+    - 学术文献

@@ -120,49 +120,24 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
-  - "🖼️":
-    - memory/1.md
-    - memory/2.md
-    - memory/3.md
-    - memory/4.md
-    - memory/5.md
-    - memory/6.md
-    - memory/7.md
-    - memory/8.md
-    - memory/9.md
-    - memory/10.md
-    - memory/11.md
-    - memory/12.md
-    - memory/13.md
-    - memory/14.md
-    - memory/15.md
-    - memory/16.md
-    - memory/17.md
-    - memory/18.md
-    - memory/19.md
-    - memory/20.md
-    - memory/21.md
-  - "✉️":
-    - https://ralvine.github.io/luvletter/
-  - "📍":
+  - "📍客廊":
     - index.md
     - "👨简介": home/brief.md
     - "🏷️标签": home/tags.md
-  - "🖋️": 
+  - "🖋️项目胶卷": 
     - memo/index.md
     - "旅行":
       - memo/travel/index.md
       - memo/travel/chuanyu.md
       - memo/travel/tibet.md
-    - "公益服务":
+    - "公益实践":
       - memo/commonweal/mathqa22.md
       - memo/commonweal/xncx.md
       - memo/commonweal/zhijiao22.md
-    - "实践活动":
       - memo/activity/highschool.md
       - memo/activity/winter21.md
       - memo/activity/winter22.md
-    - "学术项目":
+    - "科竞训练":
       - memo/project/tran.md
       - memo/project/apmcm.md
       - memo/project/mathshanshu.md
@@ -171,7 +146,7 @@ nav:
       - memo/project/modelzhcn.md
       - memo/project/modelzju.md
       - memo/project/srtp.md
-    - "组织工作":
+    - "学工社团":
       - memo/team/test.md
       - "求是潮工作团队":
         - memo/team/qsc/test.md
@@ -187,9 +162,9 @@ nav:
         - memo/team/itp/test.md
       - "ZJUMSC":
         - memo/team/msc/test.md
-  - "📁": 
+  - "📁镜面景观": 
     - library/index.md
-    - "评论":
+    - "视点评论":
       - library/review/news-1.md
       - library/review/news-2.md
       - library/review/news-3.md
@@ -206,7 +181,7 @@ nav:
       - library/review/slz-2.md
       - library/review/ygz-1.md
       - library/review/ygz-2.md
-    - "报道":
+    - "新闻报道":
       - library/report/hyb.md
       - library/report/tzhy.md
       - library/report/zfcg.md
@@ -224,7 +199,7 @@ nav:
       - library/report/wjb-1.md
       - library/report/zjw-1.md
       - library/report/zjw-2.md
-    - "文献":
+    - "学术文献":
       - library/files/xjp-1.md
       - library/files/xjp-2.md
       - library/files/xjp-3.md
@@ -232,21 +207,17 @@ nav:
       - library/files/xjp-5.md
       - library/files/xjp-6.md
       - library/files/zy23-1.md
-  - "🗒": 
+  - "🗒学习邻域": 
     - notes/index.md
-    - "计算机科学":
-      - notes/cs/index.md
-      - "数据分析":
-        - notes/cs/data/test.md
-      - "人工智能&机器学习":
-        - notes/cs/ai/cs188.md
-        - notes/cs/ai/cs229.md
-      - "开发":
-        - notes/cs/code/cplusplus.md
-        - notes/cs/code/html-css.md
-        - notes/cs/code/docker.md
-        - notes/cs/code/note0.md
+    - notes/timeline.md
     - "浙江大学本科生课程":
+      - "2022-2023春夏":
+        - notes/course/3d/fhfx.md
+        - notes/course/3d/fbhs.md
+        - notes/course/3d/sbhs.md
+        - notes/course/3d/sjjmyfx.md
+        - notes/course/3d/pdeszj.md
+        - notes/course/3d/zzjjx.md
       - "2022-2023秋冬":
         - notes/course/3u/data.md
         - notes/course/3u/quan.md
@@ -293,20 +264,41 @@ nav:
         - notes/course/1u/jjf.md
         - notes/course/1u/jihe.md
         - notes/course/1u/djj.md
-    - "产品架构":
-      - notes/product/test.md
-    - "数字创作":
+    - "数据与信息科学":
+      - notes/data/index.md
+      - notes/data/test.md
+    - "人工智能&机器学习":
+      - notes/ai/index.md
+      - notes/ai/cs188.md
+      - notes/ai/cs229.md
+    - "全栈开发":
+      - notes/code/index.md
+      - notes/code/cplusplus.md
+      - notes/code/html-css.md
+      - notes/code/docker.md
+      - notes/code/note0.md
+      - notes/code/latex.md
+      - notes/code/vue.md
+      - notes/code/electron.md
+      - notes/code/flutter.md
+      - notes/code/swiftui.md
+    - "摄影与影像创作":
+      - notes/create/index.md
       - notes/create/webs.md
       - notes/create/fcpx.md
-  - "📚": 
+    - "编曲":
+      - notes/product/index.md
+      - notes/product/test.md
+  - "📚目余仓库": 
     - view/index.md
+    - view/timeline.md
     - "书籍":
       - view/books/liucx.md
       - view/books/longnight.md
       - view/books/qpdzsgr.md
-    - "音乐":
+    - "电影与剧集":
       - view/music/lyric.md
-    - "视频":
+    - "视频收藏夹":
       - "科技评测":
         - view/video/tech/surface.md
       - "社哲心理":
