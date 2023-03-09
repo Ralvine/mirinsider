@@ -3,11 +3,11 @@ hide:
   - feedback
 nocomment: true
 ---
-# MirInsider
+# 镜瞻
 
 
 !!! note ""
-    <center><b>项目胶卷</b></center>
+    <center><b>诚恳的参与者</b></center>
     
     <b>收录项目与实践经历，包括但不限于</b>
     
@@ -18,7 +18,7 @@ nocomment: true
     - 实习
 
 !!! note ""
-    <center><b>镜面景观</b></center>
+    <center><b>谦卑的表达者</b></center>
     
     <b>收录观点文献，包括但不限于</b>
     
@@ -27,7 +27,7 @@ nocomment: true
     - 学术文献
 
 !!! note ""
-    <center><b>学习邻域</b></center>
+    <center><b>笃行的探索者</b></center>
     
     <b>收录学习笔记，包括但不限于</b>
     
@@ -39,7 +39,7 @@ nocomment: true
     - 编曲
 
 !!! note ""
-    <center><b>目余仓库</b></center>
+    <center><b>忠实的记录者</b></center>
     
     <b>收录已阅书影音，包括但不限于</b>
     

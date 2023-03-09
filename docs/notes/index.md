@@ -4,11 +4,11 @@ hide:
 nocomment: true
 ---
 
-# 邻域
+# 笃行的探索者
 
 !!! note ""
-    <center><b>学习邻域</b></center>
-    
+    <center><b>笃行的探索者</b></center>
+
     <b>收录学习笔记，包括但不限于</b>
     
     - 浙江大学本科生课程
