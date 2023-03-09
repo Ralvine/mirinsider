@@ -519,7 +519,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../sbhs/">
-        Sbhs
+        实变函数
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active">
@@ -541,6 +541,20 @@
 <a class="md-nav__link" href="#_2">
     学习摘要
   </a>
+<nav aria-label="学习摘要" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spring-1-ch1">
+    Spring 1: CH1 机器学习概论
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spring-2">
+    Spring 2:
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
@@ -1212,6 +1226,20 @@
 <a class="md-nav__link" href="#_2">
     学习摘要
   </a>
+<nav aria-label="学习摘要" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spring-1-ch1">
+    Spring 1: CH1 机器学习概论
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spring-2">
+    Spring 2:
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
@@ -1242,87 +1270,104 @@
 <span class="badge badge3">机器学习</span>
 </div>
 <h2 id="_2">学习摘要<a class="headerlink" href="#_2" title="跳转到该部分">🏷</a></h2>
-<ul>
-<li>
-<p>Spring I: <strong>CH1 机器学习概论</strong></p>
-<ul>
-<li>
-<p>人工智能</p>
-<ul>
-<li>研究目的、内容、表现形式</li>
-<li>发展历程、现状</li>
-<li>顶刊、顶会</li>
-</ul>
-</li>
-<li>
-<p>机器学习（统计学习理论）</p>
-<ul>
-<li>定义（经验）</li>
-<li>顶刊、顶会</li>
-<li>应用：NLP、CV...</li>
-<li>区别联系<ul>
-<li>数据挖掘（噪声、仓储）</li>
-<li>模式识别</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>大数据</p>
-<ul>
-<li>4"V": 量大、类多、实时、密度低</li>
-</ul>
-</li>
-<li>
-<p>深度学习（ML分支）</p>
-<ul>
-<li>深度神经网络，假设空间</li>
-<li>特征学习</li>
-</ul>
-</li>
-<li>
-<p>统计机器学习（数据预测与分析）</p>
-<ul>
-<li>数据驱动</li>
-<li>分类<ul>
-<li>监督/半监督/无监督/强化学习<ul>
-<li>数据标注，概率分布</li>
-<li>连续互动</li>
-</ul>
-</li>
-<li>概率/非，线性/非，参数/非</li>
-<li>条件概率分布/函数<ul>
-<li>参数维度</li>
-</ul>
-</li>
-<li>在线/批量/离线</li>
-<li>贝叶斯/核方法</li>
-</ul>
-</li>
-<li>三要素<ul>
-<li>模型（决策函数/条件概率/参数空间）</li>
-<li>策略（损失/风险函数，经验/结构风险最小化）</li>
-<li>算法（最优化问题）</li>
-</ul>
-</li>
-<li>模型评估和选择<ul>
-<li>训练误差、测试误差</li>
-<li>过拟合、欠拟合</li>
-<li>正则化、交叉验证</li>
-<li>泛化能力/误差（对未知数据）</li>
-<li>集中不等式</li>
-</ul>
-</li>
-<li>生成与判别模型<ul>
-<li>判别方法（直接学习决策函数/概率分布）</li>
-<li>生成方法（从联合概率分布到条件概率分布）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h3 id="spring-1-ch1">Spring 1: <strong>CH1 机器学习概论</strong><a class="headerlink" href="#spring-1-ch1" title="跳转到该部分">🏷</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span></pre></div></td><td class="code"><div><pre><span></span><code>- 人工智能
+    - 研究目的、内容、表现形式
+    - 发展历程、现状
+    - 顶刊、顶会
+
+- 机器学习（统计学习理论）
+
+    - 定义（经验）
+    - 顶刊、顶会
+    - 应用：NLP、CV...
+    - 区别联系
+        - 数据挖掘（噪声、仓储）
+        - 模式识别
+
+- 大数据
+
+    - 4"V": 量大、类多、实时、密度低
+
+- 深度学习（ML分支）
+
+    - 深度神经网络，假设空间
+    - 特征学习
+
+- 统计机器学习（数据预测与分析）
+
+    - 数据驱动
+    - 分类
+        - 监督/半监督/无监督/强化学习
+            - 数据标注，概率分布
+            - 连续互动
+        - 概率/非，线性/非，参数/非
+        - 条件概率分布/函数
+            - 参数维度
+        - 在线/批量/离线
+        - 贝叶斯/核方法
+    - 三要素
+        - 模型（决策函数/条件概率/参数空间）
+        - 策略（损失/风险函数，经验/结构风险最小化）
+        - 算法（最优化问题）
+    - 模型评估和选择
+        - 训练误差、测试误差
+        - 过拟合、欠拟合
+        - 正则化、交叉验证
+        - 泛化能力/误差（对未知数据）
+        - 集中不等式
+    - 生成与判别模型
+        - 判别方法（直接学习决策函数/概率分布）
+        - 生成方法（从联合概率分布到条件概率分布）
+</code></pre></div></td></tr></table></div>
+<h3 id="spring-2">Spring 2:<a class="headerlink" href="#spring-2" title="跳转到该部分">🏷</a></h3>
 <h2 id="_3">概要<a class="headerlink" href="#_3" title="跳转到该部分">🏷</a></h2>
 <ul>
 <li>教师姓名&amp;联系方式：郭正初，guozc@zju.edu.cn</li>
@@ -1424,7 +1469,7 @@ Cucker and Ding-Xuan Zhou, Cambridge Univesity Press, 2007.</li>
 </main>
 <footer class="md-footer">
 <nav aria-label="页脚" class="md-footer__inner md-grid">
-<a aria-label="上一页: Sbhs" class="md-footer__link md-footer__link--prev" href="../sbhs/" rel="prev">
+<a aria-label="上一页: 实变函数" class="md-footer__link md-footer__link--prev" href="../sbhs/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -1433,7 +1478,7 @@ Cucker and Ding-Xuan Zhou, Cambridge Univesity Press, 2007.</li>
 <span class="md-footer__direction">
                   上一页
                 </span>
-                Sbhs
+                实变函数
               </div>
 </div>
 </a>
